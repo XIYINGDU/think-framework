@@ -1,0 +1,4 @@
+interface:
+  display_name: "_williams"
+  short_description: "Research guide grounded in The Craft of Research"
+  default_prompt: "Use $williams-research-guide to guide this research project from a worthwhile question to a defensible, audience-ready argument."

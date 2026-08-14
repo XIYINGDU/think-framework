@@ -1,0 +1,4 @@
+interface:
+  display_name: "_vincent"
+  short_description: "Critical-thinking guide grounded in Beyond Feelings"
+  default_prompt: "Use $vincent-critical-thinking to stress-test my reasoning and guide me toward a defensible judgment."
