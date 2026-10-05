@@ -1,0 +1,428 @@
+{
+  "book": "the-craft-of-research",
+  "sections": 37,
+  "source_counterparts": 69,
+  "images": 29,
+  "inline_figures": 26,
+  "footnotes": 0,
+  "actionable_principles": 130,
+  "chinese_characters_in_sections": 135180,
+  "checks": "structural; source fidelity and prose reviewed separately",
+  "errors": [],
+  "files": [
+    {
+      "source": "the-craft-of-research/001_cover.md",
+      "source_sha256": "35519bdecf01f56a488ec444e7f8d2837e2ef37b9644115da8524fff40c6e225",
+      "translation": "the-craft-of-research-zh-CN/001_cover.md",
+      "translation_sha256": "9849503db595d21278dc7d49d14dd5c558e95a5f9f4e03aca70c1d57094329bf"
+    },
+    {
+      "source": "the-craft-of-research/002_title-page.md",
+      "source_sha256": "81d855cc3e81eee8cc525ca4157ad82045c013032dbb4b2bc4f3e28db8c0ae01",
+      "translation": "the-craft-of-research-zh-CN/002_title-page.md",
+      "translation_sha256": "e09c7dca50664d1a06fd636ab0452d190fec94cc9d7ddff5b2dc0e4536463e75"
+    },
+    {
+      "source": "the-craft-of-research/003_copyright-page.md",
+      "source_sha256": "2e7d33961cebaf61db3d04a5c3fa3e92ff73fad2de356b0f4eeb7183ac530dd2",
+      "translation": "the-craft-of-research-zh-CN/003_copyright-page.md",
+      "translation_sha256": "6df079f8d7a331669bb150b9653a3ab1b169c3e49df95df7db294cf6a74258b9"
+    },
+    {
+      "source": "the-craft-of-research/004_dedication.md",
+      "source_sha256": "b4cbf31a949aa5e4df47985e1934f008074d33734fe51531598c6cc6fadfb16a",
+      "translation": "the-craft-of-research-zh-CN/004_dedication.md",
+      "translation_sha256": "1a442ed5557c086e19b65fdb14a7ff090bbf711f79d79e4d116572d87c3b24ff"
+    },
+    {
+      "source": "the-craft-of-research/005_contents.md",
+      "source_sha256": "b81fceadcef382b599ed71523ddab097df97cc69eefdbfd1ed31582dacaf58a9",
+      "translation": "the-craft-of-research-zh-CN/005_contents.md",
+      "translation_sha256": "50c30c4d148a3c345f10d95e163325badbdebb7998ab7672fbb487e5afbfbb1e"
+    },
+    {
+      "source": "the-craft-of-research/006_preface-the-aims-of-this-edition.md",
+      "source_sha256": "046012b41d8ac43cdc067799879eee7003918120d2d6e2bf14e35f794b3220da",
+      "translation": "the-craft-of-research-zh-CN/006_preface-the-aims-of-this-edition.md",
+      "translation_sha256": "f15a9dba51d74b5c8e1d1f879132bd7db5830e54ac45cd80c6b5fdc86ea607cb"
+    },
+    {
+      "source": "the-craft-of-research/007_▶-quick-tip-a-checklist-for-understanding-your-aud.md",
+      "source_sha256": "0263826564d8739313d33489c34e4871a0bc1e9fbb458304d8163d9d6aaa357f",
+      "translation": "the-craft-of-research-zh-CN/007_▶-quick-tip-a-checklist-for-understanding-your-aud.md",
+      "translation_sha256": "8a4115d97cd326fcaf2183d2b4b799631aa1a1f66f73b5b1d405231fc67a84ba"
+    },
+    {
+      "source": "the-craft-of-research/008_i-asking-questions,-seeking-answers.md",
+      "source_sha256": "96268db86df0552d025cbbf101eefde22b4be409162dc3344a6e773e1f212c9a",
+      "translation": "the-craft-of-research-zh-CN/008_i-asking-questions,-seeking-answers.md",
+      "translation_sha256": "a0cb586b84d3d3cea1dc48c05695efb44ad69970b05d12b373029e9c576028f8"
+    },
+    {
+      "source": "the-craft-of-research/009_▶-quick-tip-sustaining-a-research-project-alone-an.md",
+      "source_sha256": "54e01ed8e7fc2bb779942588bc1bb5476cda13b8413e03f533568b10f115472f",
+      "translation": "the-craft-of-research-zh-CN/009_▶-quick-tip-sustaining-a-research-project-alone-an.md",
+      "translation_sha256": "0b8a80c526f87144770cb2b33bdb2a9f912caef4c6a3105ee37aa93f20e6f8bd"
+    },
+    {
+      "source": "the-craft-of-research/010_▶-quick-tip-finding-topics.md",
+      "source_sha256": "7283869804936c7e066eb0fe7fe1539bc6bd54fb22ba6e3ee80f2151d8357d89",
+      "translation": "the-craft-of-research-zh-CN/010_▶-quick-tip-finding-topics.md",
+      "translation_sha256": "9a1e147d90a434500a8b4aa0f62628b3ea1d2185a7c0f834098dac43498b3bac"
+    },
+    {
+      "source": "the-craft-of-research/011_▶-quick-tip-making-an-opportunity-of-inexperience.md",
+      "source_sha256": "55c8d188d02dd73491988ede0b56a6c2d0ac85dfff809fd93024efee6c87bd6f",
+      "translation": "the-craft-of-research-zh-CN/011_▶-quick-tip-making-an-opportunity-of-inexperience.md",
+      "translation_sha256": "31cc37052e7ecd447e0800c1243de442e88722afad1a5fc679c44783628997e3"
+    },
+    {
+      "source": "the-craft-of-research/012_ii-sources-and-resources.md",
+      "source_sha256": "3841d0af0c8a403fef9799c87713a0d6de04224d17598463c36b573f3bd4bdf6",
+      "translation": "the-craft-of-research-zh-CN/012_ii-sources-and-resources.md",
+      "translation_sha256": "6cfcf5f65e7246317e59a857ab7682b129596f5ab7ed231a7b3c868f77f5984e"
+    },
+    {
+      "source": "the-craft-of-research/013_prologue-sources-and-authentic-research.md",
+      "source_sha256": "4e2511cc85d77570325c6241ce9a710d9c725c3904a71b6811e81c914544bde3",
+      "translation": "the-craft-of-research-zh-CN/013_prologue-sources-and-authentic-research.md",
+      "translation_sha256": "65aa60aed5734089a0d49a9d5c950e0e8c54cae0a9f8ba0c2d12b96c4d01b302"
+    },
+    {
+      "source": "the-craft-of-research/014_▶-quick-tip-using-generative-artificial-intelligen.md",
+      "source_sha256": "210869d227d8c5caad9b2ee0ea54fa2623ab23f695004fcd6f5ec57f78843fc5",
+      "translation": "the-craft-of-research-zh-CN/014_▶-quick-tip-using-generative-artificial-intelligen.md",
+      "translation_sha256": "ecef6ce1de7d2b312582f541fb55e7d1a630fc53fc5041b0b85d855430034fc9"
+    },
+    {
+      "source": "the-craft-of-research/015_▶-quick-tip-managing-moments-of-uncertainty.md",
+      "source_sha256": "b7b368450582d6ee000fc3bda6c1c5c5c94eea3ede84a394b187d99c0e6730c4",
+      "translation": "the-craft-of-research-zh-CN/015_▶-quick-tip-managing-moments-of-uncertainty.md",
+      "translation_sha256": "d0887a134416320f11ab40331964986d528418dab0a5f5931659388ed7dff145"
+    },
+    {
+      "source": "the-craft-of-research/016_iii-making-your-argument.md",
+      "source_sha256": "abf20aa62afb562d725a033b1a9951fd8a691c299cdfffc90566a093e3f6c5ab",
+      "translation": "the-craft-of-research-zh-CN/016_iii-making-your-argument.md",
+      "translation_sha256": "52e9cd7466325a9a41624d4fff007814b5585c4712e51e95ca48c14b780dd5aa"
+    },
+    {
+      "source": "the-craft-of-research/017_prologue-assembling-a-research-argument.md",
+      "source_sha256": "81e0c0250ec514dccaac346617667bc0bb46cdd116259c20facd84fe179d802a",
+      "translation": "the-craft-of-research-zh-CN/017_prologue-assembling-a-research-argument.md",
+      "translation_sha256": "2e20bdaeff1f517376e7c5b73063a51e0062b823d3dbcf4a8706ee7841b63e27"
+    },
+    {
+      "source": "the-craft-of-research/018_▶-quick-tip-a-common-mistake—falling-back-on-what.md",
+      "source_sha256": "203b9dac7a30c7f8c75dbf7d03990e82f50aaac01118e1bbaae701a1aee9e81e",
+      "translation": "the-craft-of-research-zh-CN/018_▶-quick-tip-a-common-mistake—falling-back-on-what.md",
+      "translation_sha256": "8d7bfd9222b409104bc180800c164b718e53dc07d78de70a28c4320bf2097374"
+    },
+    {
+      "source": "the-craft-of-research/019_▶-quick-tip-make-your-claim-contestable.md",
+      "source_sha256": "459fd276c06d7e9a0a6d1f3f57b11a9bb93eed53894cbd736550900c97fb1c8e",
+      "translation": "the-craft-of-research-zh-CN/019_▶-quick-tip-make-your-claim-contestable.md",
+      "translation_sha256": "8fb99a886221bb57d3885cc5a176b6c687ec706d593620aeb8911e1d385e22de"
+    },
+    {
+      "source": "the-craft-of-research/020_▶-quick-tip-assess-your-evidence-as-you-gather-it.md",
+      "source_sha256": "f4c06e501ac71b91e94bd7b9103fdfd2ad304c62661cc16a93e81fbf9f95cd20",
+      "translation": "the-craft-of-research-zh-CN/020_▶-quick-tip-assess-your-evidence-as-you-gather-it.md",
+      "translation_sha256": "8990a0f9e177b3fd41626c793fb12a30d1d2895ec50c61606fa5f8eb6c05c00a"
+    },
+    {
+      "source": "the-craft-of-research/021_▶-quick-tip-reasons,-evidence,-and-warrants.md",
+      "source_sha256": "d0bfc09853a0bc78005047419b8a35d7d3ca32f4efcaf0c1f986145071222755",
+      "translation": "the-craft-of-research-zh-CN/021_▶-quick-tip-reasons,-evidence,-and-warrants.md",
+      "translation_sha256": "65110c19a9766c37fd801801c1847f42a02c1f8ff2ca5bb707ce5ea3cc5e8dd5"
+    },
+    {
+      "source": "the-craft-of-research/022_▶-quick-tip-three-predictable-disagreements.md",
+      "source_sha256": "3449efeee4b5a5e459a338d8e0e74d9e4d8ec55991ccb593ab0dcaee1facac78",
+      "translation": "the-craft-of-research-zh-CN/022_▶-quick-tip-three-predictable-disagreements.md",
+      "translation_sha256": "f2a884e46a054279d76de441887f989872dadaa6981f050dd85b393fe7d9668f"
+    },
+    {
+      "source": "the-craft-of-research/023_iv-delivering-your-argument.md",
+      "source_sha256": "57c20071341c2660baf64155044d5dfd69c29167feeb40996a8fa353f61ae345",
+      "translation": "the-craft-of-research-zh-CN/023_iv-delivering-your-argument.md",
+      "translation_sha256": "c638569250e99da02114f390ca18ecb4061e27ab3e7b7d4a39b362e458c22232"
+    },
+    {
+      "source": "the-craft-of-research/024_prologue-planning,-writing,-and-thinking.md",
+      "source_sha256": "1ab505e577516647be764b22c59f2e3e65c400651bf5a0128db1aa7cccc44ed2",
+      "translation": "the-craft-of-research-zh-CN/024_prologue-planning,-writing,-and-thinking.md",
+      "translation_sha256": "22dcdd17bcde76e869168e1d1c8d9daf0db330ce3592d65ed2f1cae4c22f19fa"
+    },
+    {
+      "source": "the-craft-of-research/025_▶-quick-tip-managing-anxiety-as-a-writer.md",
+      "source_sha256": "fc8c399b9de3c9a24913c0d43da9aaecae69be185b2d06e0a5e316694d8d8a16",
+      "translation": "the-craft-of-research-zh-CN/025_▶-quick-tip-managing-anxiety-as-a-writer.md",
+      "translation_sha256": "23c65549041f1f0f84ccca47f31b9cd9d77a0e76ad2560075233173831218d6f"
+    },
+    {
+      "source": "the-craft-of-research/026_▶-quick-tip-abstracts.md",
+      "source_sha256": "aea0f8487e35d11a27d611fd796095bbced2836187b118d06628b0e3fbf8f5f2",
+      "translation": "the-craft-of-research-zh-CN/026_▶-quick-tip-abstracts.md",
+      "translation_sha256": "e5c5329c6062f6568cb83ffcb967c058d9fe3d634ac8acb481b1a7b996b61407"
+    },
+    {
+      "source": "the-craft-of-research/027_▶-quick-tip-indicating-citations-in-your-paper.md",
+      "source_sha256": "7c91de96fb6064943e89c2b83e72cc17c77ef77a2fd1055c8b8c159107845fa4",
+      "translation": "the-craft-of-research-zh-CN/027_▶-quick-tip-indicating-citations-in-your-paper.md",
+      "translation_sha256": "7489a466681a46c402be33bf0c07d8ddedd32602f670b4918449e381321faf6b"
+    },
+    {
+      "source": "the-craft-of-research/028_▶-quick-tip-look-for-opportunities-to-include-visu.md",
+      "source_sha256": "5dc826b55178040eba7307b6e3cc7fd6bd2269c6efa2bfc1ac9a7b37be9f7a95",
+      "translation": "the-craft-of-research-zh-CN/028_▶-quick-tip-look-for-opportunities-to-include-visu.md",
+      "translation_sha256": "913c38b50117fc8680fb6a19a2472783e083dab890d8eb7b8bbc78b4a15a5f03"
+    },
+    {
+      "source": "the-craft-of-research/029_▶-quick-tip-use-key-terms-in-titles.md",
+      "source_sha256": "521ad7ea425ff2e7eb09f94f0cb3bb69e62e23253b1f53fe35c5ee37c947bd3c",
+      "translation": "the-craft-of-research-zh-CN/029_▶-quick-tip-use-key-terms-in-titles.md",
+      "translation_sha256": "ed4d282cf91b58815bc6496280eb0b0c9f6922379b11cc450c876450799b3007"
+    },
+    {
+      "source": "the-craft-of-research/030_▶-quick-tip-the-quickest-revision-strategy.md",
+      "source_sha256": "4e15446313d2046a2eee0811a8167e2e47b30cc73af608d2db0504d8e5a04546",
+      "translation": "the-craft-of-research-zh-CN/030_▶-quick-tip-the-quickest-revision-strategy.md",
+      "translation_sha256": "1c7353ab4678a8fa8fe88a7a274ec6d785f37ea9873980d060e196218853cc5e"
+    },
+    {
+      "source": "the-craft-of-research/031_▶-quick-tip-treat-your-presentation-as-a-performan.md",
+      "source_sha256": "cea554c15e477573b8d23897e340670f64cdcb46685a12bf9efb654cb70f6d30",
+      "translation": "the-craft-of-research-zh-CN/031_▶-quick-tip-treat-your-presentation-as-a-performan.md",
+      "translation_sha256": "d0ca82c87fb459f12a28a364bef3b64227a0d3ec75810e09b549ddb18e22d7f9"
+    },
+    {
+      "source": "the-craft-of-research/032_v-some-last-considerations.md",
+      "source_sha256": "361748bb3362d416c7191605f1304728dd02b0e256974a377fc0d52abd11cf52",
+      "translation": "the-craft-of-research-zh-CN/032_v-some-last-considerations.md",
+      "translation_sha256": "48206aa4b51097e081d7bd085c511d7ad2df9d81960a63e19dd1aee7e2c39796"
+    },
+    {
+      "source": "the-craft-of-research/033_17.4-a-final-thought.md",
+      "source_sha256": "94919a38da5c66c0071683c402fe4013cc1b4a7a466dc27db11594811d01ec7a",
+      "translation": "the-craft-of-research-zh-CN/033_17.4-a-final-thought.md",
+      "translation_sha256": "3ed835ee11e4a7dd82b8bc2a6a3199dc6e36a9e090751d6ccd2535b6d81e0237"
+    },
+    {
+      "source": "the-craft-of-research/034_18.3-accepting-the-inevitable-messiness-of-learnin.md",
+      "source_sha256": "277f8ed43f587ce3a382f5ad65df2848ad7e92767b2981b69131a02c3f80eee1",
+      "translation": "the-craft-of-research-zh-CN/034_18.3-accepting-the-inevitable-messiness-of-learnin.md",
+      "translation_sha256": "66df459a46944a950cf2f244b1b33e76b7bfe986118f2bb24ba2307c64ee0ba9"
+    },
+    {
+      "source": "the-craft-of-research/035_our-debts.md",
+      "source_sha256": "2b4fe62df868dff786dd96d7b967af538321b718e21c125ac8108c79a4417d9a",
+      "translation": "the-craft-of-research-zh-CN/035_our-debts.md",
+      "translation_sha256": "6864931d1a69bfcdaa4454c876c6a47d5252f862609c7d3e975be963cf88d324"
+    },
+    {
+      "source": "the-craft-of-research/036_appendix-a-brief-guide-to-bibliographic-and-other.md",
+      "source_sha256": "dafbfcf3f02968154e2c269899d7cf31b01bcfdd77f6c57b1348d5d658ed85a3",
+      "translation": "the-craft-of-research-zh-CN/036_appendix-a-brief-guide-to-bibliographic-and-other.md",
+      "translation_sha256": "675ba1779c422edc81a5ce5f247951205f97aafb1c048f5cec021ca580f48f8a"
+    },
+    {
+      "source": "the-craft-of-research/037_index.md",
+      "source_sha256": "63cf3c6b683505de7b17b9462d8bdf4435a485995d37412b3c7ea1e83d25db5b",
+      "translation": "the-craft-of-research-zh-CN/037_index.md",
+      "translation_sha256": "68f6e94e447140875fc81604b6720a9f99c77906bf59a5bd07914d0350ba4fe7"
+    },
+    {
+      "source": "the-craft-of-research/derived/actionable-principles.md",
+      "source_sha256": "17c8486e4a194cb1dec4f8c9f5755925a0cf8ee0888790b80c3f01db1d101dd6",
+      "translation": "the-craft-of-research-zh-CN/derived/actionable-principles.md",
+      "translation_sha256": "355bf782a6ce7ce73b92b1bf07851766aae8f8b5c9fe9edd11b2a5cb70ded8eb"
+    },
+    {
+      "source": "the-craft-of-research/derived/chapter-principles.md",
+      "source_sha256": "dccf7a6f09d9737e2a331a2de0939bb0e063cc0edb8b965bb03aafe941aa8333",
+      "translation": "the-craft-of-research-zh-CN/derived/chapter-principles.md",
+      "translation_sha256": "aeaba3961019f9aa82c985e84085c4024bfb337e5f67fb6d95caeb93213aa121"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-Booth-cover.jpg",
+      "source_sha256": "dad04a1a90cb3b1865c66e609d432e9f5cb94aab5b2f583cc09650779544f36b",
+      "translation": "the-craft-of-research-zh-CN/images/chi-Booth-cover.jpg",
+      "translation_sha256": "dad04a1a90cb3b1865c66e609d432e9f5cb94aab5b2f583cc09650779544f36b"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-05004-REVa_2-21.jpeg",
+      "source_sha256": "0221819b87f86c9c54ce00bee4e84b97eca1a5991f5e8430c0a495338f6d90f0",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-05004-REVa_2-21.jpeg",
+      "translation_sha256": "0221819b87f86c9c54ce00bee4e84b97eca1a5991f5e8430c0a495338f6d90f0"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig02001_11-27.jpeg",
+      "source_sha256": "75000bf354222ad0afcb539b47a056c4674f5f04d1949fcaa079ceea1b516746",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig02001_11-27.jpeg",
+      "translation_sha256": "75000bf354222ad0afcb539b47a056c4674f5f04d1949fcaa079ceea1b516746"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig04001_REV_02-21.jpeg",
+      "source_sha256": "a4abf3af1e214c6b43df3528ece9c02134737de01371dcea30dc5ad1ebd0e1c8",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig04001_REV_02-21.jpeg",
+      "translation_sha256": "a4abf3af1e214c6b43df3528ece9c02134737de01371dcea30dc5ad1ebd0e1c8"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig05001_11-27.jpeg",
+      "source_sha256": "5178584dfb52b04259e29dc03bdbbf1c595e00aeaeb0fbaaf0c505088842b861",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig05001_11-27.jpeg",
+      "translation_sha256": "5178584dfb52b04259e29dc03bdbbf1c595e00aeaeb0fbaaf0c505088842b861"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig05002_REV_11-27.jpeg",
+      "source_sha256": "6aa9646035f839d0436a39324a0b9f1da4554d38cab3dc42478d29f2cef3565e",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig05002_REV_11-27.jpeg",
+      "translation_sha256": "6aa9646035f839d0436a39324a0b9f1da4554d38cab3dc42478d29f2cef3565e"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig05003_REV_11-27.jpeg",
+      "source_sha256": "67a980792dc7323f1afc809b8644e4238253d04f85a3b185e09d1ff3a39fc9f5",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig05003_REV_11-27.jpeg",
+      "translation_sha256": "67a980792dc7323f1afc809b8644e4238253d04f85a3b185e09d1ff3a39fc9f5"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig05004b_REV_11-27.jpeg",
+      "source_sha256": "f0d61dcd010d2887be0bcdfd1ff372d757de5698d060532e6147f399dea2642e",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig05004b_REV_11-27.jpeg",
+      "translation_sha256": "f0d61dcd010d2887be0bcdfd1ff372d757de5698d060532e6147f399dea2642e"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig07001_REV_11-27.jpeg",
+      "source_sha256": "62ea7c36d497e46a6cb9e9aadb9ac17a9ecb7d308398403560c36b072221b8c8",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig07001_REV_11-27.jpeg",
+      "translation_sha256": "62ea7c36d497e46a6cb9e9aadb9ac17a9ecb7d308398403560c36b072221b8c8"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig07002_REV_11-27.jpeg",
+      "source_sha256": "60e0fed441d646ccefbfcd264cf505cf698c3af54a256f07f3b8e12d20839eb5",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig07002_REV_11-27.jpeg",
+      "translation_sha256": "60e0fed441d646ccefbfcd264cf505cf698c3af54a256f07f3b8e12d20839eb5"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig08001_REV_2nd_11-27.jpeg",
+      "source_sha256": "763cf3da9e0a0a7d0a0c7bd5c79d2bc7b0ef99e01329fe9aaa4f6bc624111b5f",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig08001_REV_2nd_11-27.jpeg",
+      "translation_sha256": "763cf3da9e0a0a7d0a0c7bd5c79d2bc7b0ef99e01329fe9aaa4f6bc624111b5f"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig08002_REV_11-27.jpeg",
+      "source_sha256": "1c706dc374ef3834263c11a908ed79e88fe562c9eeab027bfa9fbcabbed2418e",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig08002_REV_11-27.jpeg",
+      "translation_sha256": "1c706dc374ef3834263c11a908ed79e88fe562c9eeab027bfa9fbcabbed2418e"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig08003_REV_2nd_11-27.jpeg",
+      "source_sha256": "54e79560cf0da023d838ab2c034554d4be87b3c9aaacbe3bc07da63d6347e186",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig08003_REV_2nd_11-27.jpeg",
+      "translation_sha256": "54e79560cf0da023d838ab2c034554d4be87b3c9aaacbe3bc07da63d6347e186"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig13001_REV_11-27.jpeg",
+      "source_sha256": "1683bdf365b867e0d10770ce53815d6bda08c9869f14732a26f0a28ba8cad0bc",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig13001_REV_11-27.jpeg",
+      "translation_sha256": "1683bdf365b867e0d10770ce53815d6bda08c9869f14732a26f0a28ba8cad0bc"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig13002_REV_11-27.jpeg",
+      "source_sha256": "024da312161e01f2169040527d1626fe203faea38dca1582906447da69170973",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig13002_REV_11-27.jpeg",
+      "translation_sha256": "024da312161e01f2169040527d1626fe203faea38dca1582906447da69170973"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig13003_REV_11-27.jpeg",
+      "source_sha256": "78815da1d9114b6445cbb38fa3f67b6c2cc0b18d0f0b0e325d8dcaeff120cc6b",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig13003_REV_11-27.jpeg",
+      "translation_sha256": "78815da1d9114b6445cbb38fa3f67b6c2cc0b18d0f0b0e325d8dcaeff120cc6b"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig13004_11-27.jpeg",
+      "source_sha256": "edd2ee19f528ce8bc5ffaaab5526ab6ff44d3aff7e89efe66236665c90872f9a",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig13004_11-27.jpeg",
+      "translation_sha256": "edd2ee19f528ce8bc5ffaaab5526ab6ff44d3aff7e89efe66236665c90872f9a"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig13005_REV_02-21.jpeg",
+      "source_sha256": "a8f3a5311ba0b4664a698b6776594092f1f225bfdcbd01593336910a3d62c072",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig13005_REV_02-21.jpeg",
+      "translation_sha256": "a8f3a5311ba0b4664a698b6776594092f1f225bfdcbd01593336910a3d62c072"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig13006_11-27.jpeg",
+      "source_sha256": "36a6d44e6bd520df689bffcba2d55f4c697b7f3cbb7b25a09e5a988432d971fb",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig13006_11-27.jpeg",
+      "translation_sha256": "36a6d44e6bd520df689bffcba2d55f4c697b7f3cbb7b25a09e5a988432d971fb"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig13007_11-27.jpeg",
+      "source_sha256": "74c8e26ed32031a78cbd08b03230c9691ff980fd66e6265736ac28001c51eaa3",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig13007_11-27.jpeg",
+      "translation_sha256": "74c8e26ed32031a78cbd08b03230c9691ff980fd66e6265736ac28001c51eaa3"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig13008_REV_11-27.jpeg",
+      "source_sha256": "98f827559001ffe509e543ceb0a49e30f7bf129222e65cdd239416db827d398d",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig13008_REV_11-27.jpeg",
+      "translation_sha256": "98f827559001ffe509e543ceb0a49e30f7bf129222e65cdd239416db827d398d"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig13009_REV_11-27.jpeg",
+      "source_sha256": "f64194a30c2968f6bdf750c2dc6078911a1780e7c014df0ae7ac8df98d950a31",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig13009_REV_11-27.jpeg",
+      "translation_sha256": "f64194a30c2968f6bdf750c2dc6078911a1780e7c014df0ae7ac8df98d950a31"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig13010_REV_11-27.jpeg",
+      "source_sha256": "2968d70c3ff8283c8894c75c204c9744ab0253ba4ddebebf734af8b03a6f1d93",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig13010_REV_11-27.jpeg",
+      "translation_sha256": "2968d70c3ff8283c8894c75c204c9744ab0253ba4ddebebf734af8b03a6f1d93"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig13011_REV_11-27.jpeg",
+      "source_sha256": "98586eb2f3eb9caa86907dc664619d38d26e6fc35174311599728a7932bb20e7",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig13011_REV_11-27.jpeg",
+      "translation_sha256": "98586eb2f3eb9caa86907dc664619d38d26e6fc35174311599728a7932bb20e7"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig13012_11-27.jpeg",
+      "source_sha256": "3ac7a80eb533c3afd200ea93053262e816c8ae90ae61bec859703ae38bebac3b",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig13012_11-27.jpeg",
+      "translation_sha256": "3ac7a80eb533c3afd200ea93053262e816c8ae90ae61bec859703ae38bebac3b"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig13014_REV_2-21.jpeg",
+      "source_sha256": "877f29884f3d2776949eb6f4bedfa4ad341c5e3b65a9ee7954f1a7910533410b",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig13014_REV_2-21.jpeg",
+      "translation_sha256": "877f29884f3d2776949eb6f4bedfa4ad341c5e3b65a9ee7954f1a7910533410b"
+    },
+    {
+      "source": "the-craft-of-research/images/chi-booth-fig13016a_REV_2nd_11-27.jpeg",
+      "source_sha256": "108e262dfe4a741654f6f2f2bca53c32d8a59f548f5edcdb9084a058f5cdd107",
+      "translation": "the-craft-of-research-zh-CN/images/chi-booth-fig13016a_REV_2nd_11-27.jpeg",
+      "translation_sha256": "108e262dfe4a741654f6f2f2bca53c32d8a59f548f5edcdb9084a058f5cdd107"
+    },
+    {
+      "source": "the-craft-of-research/images/infinity-symbol.jpg",
+      "source_sha256": "bcd50f61338b706eac044ce238a3dd4d0ce5bcd598ce93fff7d84754365c6f7b",
+      "translation": "the-craft-of-research-zh-CN/images/infinity-symbol.jpg",
+      "translation_sha256": "bcd50f61338b706eac044ce238a3dd4d0ce5bcd598ce93fff7d84754365c6f7b"
+    },
+    {
+      "source": "the-craft-of-research/images/logo-chicago-guides.jpg",
+      "source_sha256": "45e372399e560a5b3a0ce02711dfef3ec15e17883c9545147abf8537bccc59a4",
+      "translation": "the-craft-of-research-zh-CN/images/logo-chicago-guides.jpg",
+      "translation_sha256": "45e372399e560a5b3a0ce02711dfef3ec15e17883c9545147abf8537bccc59a4"
+    },
+    {
+      "source": "the-craft-of-research/the-craft-of-research.md",
+      "source_sha256": "2eda716fa5e24edcb9733403a6575de8b1e05a75c11e0e61d58ee40ef73d9145",
+      "translation": "the-craft-of-research-zh-CN/the-craft-of-research.md",
+      "translation_sha256": "6056f9dea688d7f2d19fa38578eef476ed4723cf18f0b6f76b2f44ffe93f5468"
+    }
+  ]
+}

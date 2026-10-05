@@ -1,0 +1,206 @@
+{
+  "book": "beyond-feelings",
+  "sections": 26,
+  "source_counterparts": 32,
+  "images": 2,
+  "inline_figures": 0,
+  "footnotes": 134,
+  "actionable_principles": 48,
+  "chinese_characters_in_sections": 87585,
+  "checks": "structural; source fidelity and prose reviewed separately",
+  "errors": [],
+  "files": [
+    {
+      "source": "beyond-feelings/001_beyond-feelings.md",
+      "source_sha256": "84bfb7dfb0a286330f3a4fb24661c6436a12f89f5705ec77e8f9d2563da87adb",
+      "translation": "beyond-feelings-zh-CN/001_beyond-feelings.md",
+      "translation_sha256": "9a17dc59f4e06c60741a8222615cedf06772233c8a8af8a8d791b93a3837bf65"
+    },
+    {
+      "source": "beyond-feelings/002_table-of-contents.md",
+      "source_sha256": "78322505d5bf1c65b23d646d4a75fb8bff3dbb38b0f247394ea82683c807489e",
+      "translation": "beyond-feelings-zh-CN/002_table-of-contents.md",
+      "translation_sha256": "4e3fbdf38017ef9d4b333a2e46134d3e13eb23b9a1bae86db89d6b7cc4a9acf5"
+    },
+    {
+      "source": "beyond-feelings/003_introduction.md",
+      "source_sha256": "dd9395e3ee723313479dc49aec54a73e056c334dcb71ae95682ac1bbff89ca00",
+      "translation": "beyond-feelings-zh-CN/003_introduction.md",
+      "translation_sha256": "29d60b938f61afcce0eb505d7e8b326b4d194458c0de46977fefe1d49d608675"
+    },
+    {
+      "source": "beyond-feelings/004_who-are-you.md",
+      "source_sha256": "98005b00322726b8752831f16e1c14e945c199551ff7f5bc5a69da1855cabe7e",
+      "translation": "beyond-feelings-zh-CN/004_who-are-you.md",
+      "translation_sha256": "e51afd559c79ae2c9e55373099aa6a8da21b73c2ae63794b978add3b1c4ad8f7"
+    },
+    {
+      "source": "beyond-feelings/005_what-is-critical-thinking.md",
+      "source_sha256": "48b25b3b9552d39ef13706087fbed960aa32d3380c1479b1c54cbbd368c50a31",
+      "translation": "beyond-feelings-zh-CN/005_what-is-critical-thinking.md",
+      "translation_sha256": "12da8b1e7000447967863b8cb8772308aec006a9c3bed784e57f0e43a5861945"
+    },
+    {
+      "source": "beyond-feelings/006_what-is-truth.md",
+      "source_sha256": "0257c00a53d34ad08329d0edd5292135152663de43bc71f7883a1e6dfa486537",
+      "translation": "beyond-feelings-zh-CN/006_what-is-truth.md",
+      "translation_sha256": "b784608875ea30e2b91e4f6dd9f149ef91273d6fe99c7c79519df3ba90490bc1"
+    },
+    {
+      "source": "beyond-feelings/007_what-does-it-mean-to-know.md",
+      "source_sha256": "056ac1e1a88de6f35e817cde10f04ef7dd6eb6edde64391a500439943100ffa2",
+      "translation": "beyond-feelings-zh-CN/007_what-does-it-mean-to-know.md",
+      "translation_sha256": "2573c52761ee92c7a50316af5f63acca8ea3290de10270dd0ade7ed8ef231b68"
+    },
+    {
+      "source": "beyond-feelings/008_how-good-are-your-opinions.md",
+      "source_sha256": "e70663cb7ed129619733967dd9bb4d2ebf95e7b5043e4fae853de3107ed8e6e6",
+      "translation": "beyond-feelings-zh-CN/008_how-good-are-your-opinions.md",
+      "translation_sha256": "a2d9f05333e827f9f190a3e49ba4113b1a05029d216abcf826197daa1a58afc1"
+    },
+    {
+      "source": "beyond-feelings/009_the-basic-problem-mind-is-better.md",
+      "source_sha256": "063484c57e859004ad458a9501ae87aa6b3017d0a18a855114ec9f4b72f3aeca",
+      "translation": "beyond-feelings-zh-CN/009_the-basic-problem-mind-is-better.md",
+      "translation_sha256": "468b74a0b2f23ef378cc88099f615e1f9f58980d0602551ae3c1f9ba3a7fd834"
+    },
+    {
+      "source": "beyond-feelings/010_resistance-to-change.md",
+      "source_sha256": "ec3cf4ad3b79dfabcd752f0b42a647cc6e2c48abaf79554e422af0030710a309",
+      "translation": "beyond-feelings-zh-CN/010_resistance-to-change.md",
+      "translation_sha256": "63a54944841739a4a87b94b8dc21292e1918565d00c668a38538cc8133000243"
+    },
+    {
+      "source": "beyond-feelings/011_conformity.md",
+      "source_sha256": "25fb34cedcdd4da69f3b7bbaaf64858174e42b4f89070a4fd70389ac4bb3c4ba",
+      "translation": "beyond-feelings-zh-CN/011_conformity.md",
+      "translation_sha256": "0dc9ff8bf8fec466af783c15e236ebbae9af6f6b7bf1ab4308f600a7cc2ffb98"
+    },
+    {
+      "source": "beyond-feelings/012_face-saving.md",
+      "source_sha256": "c939d251c94192d57c390cccdc62f5ff2f17686665194f3d8acb9b0778c21a96",
+      "translation": "beyond-feelings-zh-CN/012_face-saving.md",
+      "translation_sha256": "c34cbab47e5ec65273e636c6b5a3b2280e1d40ce202cdf9635ded3313709e8b6"
+    },
+    {
+      "source": "beyond-feelings/013_stereotyping.md",
+      "source_sha256": "afdf757fce3bfb2db859c6be043a0a111fd94c1f1ed905ebce9f6bed7a4ce82e",
+      "translation": "beyond-feelings-zh-CN/013_stereotyping.md",
+      "translation_sha256": "85d3ff26462bf39492f294bdafc9cbfe7aa98422811b4917db70cd99ccda2d8b"
+    },
+    {
+      "source": "beyond-feelings/014_oversimplification.md",
+      "source_sha256": "6c129a46fb9091f720766b460c2c7d547f1f67ca2728de8ee312a89968b880f5",
+      "translation": "beyond-feelings-zh-CN/014_oversimplification.md",
+      "translation_sha256": "b07914902eaf637919bd1a129ef6b925a4fec91449c1c2458f9c5167697e9dd5"
+    },
+    {
+      "source": "beyond-feelings/015_hasty-conclusions.md",
+      "source_sha256": "e693611ebb895fa9cbd2465974236cf330d43ef505c2c3ade89cc504c9aac4e6",
+      "translation": "beyond-feelings-zh-CN/015_hasty-conclusions.md",
+      "translation_sha256": "733bc70136932dce2c21bed08f6c64b051301563fcc7e1d1c71164f773b720c0"
+    },
+    {
+      "source": "beyond-feelings/016_unwarranted-assumptions.md",
+      "source_sha256": "5940cc3fb9a5723c797a2e501d5a69fde8f44f5e15cff72ebdcafb89e47bc2c6",
+      "translation": "beyond-feelings-zh-CN/016_unwarranted-assumptions.md",
+      "translation_sha256": "a312a3f13a3eeb9609fd84ca0e5921317252d1d3bfd2f11cbcc76b4ddbc7b477"
+    },
+    {
+      "source": "beyond-feelings/017_unwarranted-assumptions.md",
+      "source_sha256": "9d1ecf1494720fd021f9b9063c4977e09d182cb4267efeac0c1849fc6039e490",
+      "translation": "beyond-feelings-zh-CN/017_unwarranted-assumptions.md",
+      "translation_sha256": "1ac803b5484386206410da402989757536df3bab9a7b28c522d06233651383ef"
+    },
+    {
+      "source": "beyond-feelings/018_the-problems-in-combination.md",
+      "source_sha256": "4f63d9e2dae1abe3fd485f0998e86bf0f53110ebe295d9da9ab61a55ad0ba371",
+      "translation": "beyond-feelings-zh-CN/018_the-problems-in-combination.md",
+      "translation_sha256": "e06cb0167fedd178c1f857f3df3caab7600ef6d19460459f925062443f911e57"
+    },
+    {
+      "source": "beyond-feelings/019_knowing-yourself.md",
+      "source_sha256": "03c4e5fa498d910e3306b107f5d041f322f442bd2aed1f1dc640198bf1d617e6",
+      "translation": "beyond-feelings-zh-CN/019_knowing-yourself.md",
+      "translation_sha256": "24dcfa5190df39c568a8e1385ea71d6e2f53434a7ae3d5e29dc21356db5549db"
+    },
+    {
+      "source": "beyond-feelings/020_being-observant.md",
+      "source_sha256": "f93c41fbc08773433301766c31f90f2a3b787c4752a3e16162f42df36bad9951",
+      "translation": "beyond-feelings-zh-CN/020_being-observant.md",
+      "translation_sha256": "1798ef3db61c574204675905b784fbb1c90ac7df9757ee2e16985366bc91b5a1"
+    },
+    {
+      "source": "beyond-feelings/021_clarifying-issues.md",
+      "source_sha256": "b8012d992f6467018dcacb22e539710569348e8c9a7b189e9325365a35124e2c",
+      "translation": "beyond-feelings-zh-CN/021_clarifying-issues.md",
+      "translation_sha256": "d845b877e35b40587c68702a33ae2741565947be5ddaf6674496642de1b1e006"
+    },
+    {
+      "source": "beyond-feelings/022_conducting-inquiry.md",
+      "source_sha256": "1c3d40bfa4f84819e95af15965ae7289f636b1c2404b0204486630d109f53ee7",
+      "translation": "beyond-feelings-zh-CN/022_conducting-inquiry.md",
+      "translation_sha256": "5e4ed68d587ae49f80afb162abe2e61ad8d04c6c83fbe1cc410c3acccd010567"
+    },
+    {
+      "source": "beyond-feelings/023_interpreting-evidence.md",
+      "source_sha256": "39b582ce67cb8a2ed81c8ed87327139718d0fe29ed5e520b77aec3555ee4d104",
+      "translation": "beyond-feelings-zh-CN/023_interpreting-evidence.md",
+      "translation_sha256": "b7ded251634c23df29099baddbf94bd738b069ad370ab863ce6e27b7c5cde049"
+    },
+    {
+      "source": "beyond-feelings/024_analyzing-viewpoints.md",
+      "source_sha256": "f3c3403de00c35ee785b25dafca0bf2bd1f22ff86a7656f97bdf2d810599f0c3",
+      "translation": "beyond-feelings-zh-CN/024_analyzing-viewpoints.md",
+      "translation_sha256": "c76490155421e1ce21ad5ed6eaecf44f041be5a6931588d9558c99045ae295e3"
+    },
+    {
+      "source": "beyond-feelings/025_forming-judgments.md",
+      "source_sha256": "0d7016ce5b24a1a990f079593af2e424a72ad1d7dcd1db867207cd718f14716d",
+      "translation": "beyond-feelings-zh-CN/025_forming-judgments.md",
+      "translation_sha256": "2c2428680534a3379af8d120dbb9223632d5652099f7a8f7241d89ac5bc704d7"
+    },
+    {
+      "source": "beyond-feelings/026_some-contemporary-issues.md",
+      "source_sha256": "dde7b3fba859a4038323cc32759ee71470dec8883c32f899fb86478e22b1ec55",
+      "translation": "beyond-feelings-zh-CN/026_some-contemporary-issues.md",
+      "translation_sha256": "d032d3483026e54813a2ea454d0f9345e852bd6cca35a2dedeb1241bd050aae0"
+    },
+    {
+      "source": "beyond-feelings/beyond-feelings.md",
+      "source_sha256": "a81004e474945f2683883b90b5d81fee589d86d2d9d39b545bd18e2b29895f04",
+      "translation": "beyond-feelings-zh-CN/beyond-feelings.md",
+      "translation_sha256": "e179638d585ae77b7178e9585788659562bf105674452925fadeacb6930a533f"
+    },
+    {
+      "source": "beyond-feelings/derived/actionable-principles.md",
+      "source_sha256": "97d3bc11d1754405e3ad1afdbccf25473e71788349cd0cee16f77233ad8ae1e9",
+      "translation": "beyond-feelings-zh-CN/derived/actionable-principles.md",
+      "translation_sha256": "0ce928e4ce2090ae50c7e10399d1d5925670b8f09535715c6e81989568b70a80"
+    },
+    {
+      "source": "beyond-feelings/derived/chapter-principles.md",
+      "source_sha256": "ba6c5548cbef534567418acf9f2bd0c914d1ac013a623a4ef45fa4c09a4f5a10",
+      "translation": "beyond-feelings-zh-CN/derived/chapter-principles.md",
+      "translation_sha256": "49b662e2947296fc983db3aff71ee82b234c08cf8393cfa36f00bdda81c3569a"
+    },
+    {
+      "source": "beyond-feelings/derived/partials/part-3b-problems-b.md",
+      "source_sha256": "cbfc2a5ada1b8c1f085dec79986c07168ab215963e6c67f69b2336e6fc25400e",
+      "translation": "beyond-feelings-zh-CN/derived/partials/part-3b-problems-b.md",
+      "translation_sha256": "6e45c509c525c1b5a3f9ceffcaa8997a033bdda7784cef55a5708cdb3d97c230"
+    },
+    {
+      "source": "beyond-feelings/images/00001.jpg",
+      "source_sha256": "26bba8489e8008fa1ee08c93486153c76454926aba1973736a49a895800ff0ba",
+      "translation": "beyond-feelings-zh-CN/images/00001.jpg",
+      "translation_sha256": "26bba8489e8008fa1ee08c93486153c76454926aba1973736a49a895800ff0ba"
+    },
+    {
+      "source": "beyond-feelings/images/cover.jpeg",
+      "source_sha256": "a4f8ef012b600c2a2f2851232e1275796c3ca03f24f10ab5c7c5afc4318e9cd0",
+      "translation": "beyond-feelings-zh-CN/images/cover.jpeg",
+      "translation_sha256": "a4f8ef012b600c2a2f2851232e1275796c3ca03f24f10ab5c7c5afc4318e9cd0"
+    }
+  ]
+}

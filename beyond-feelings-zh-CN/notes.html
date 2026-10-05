@@ -1,0 +1,1294 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>超越感觉 · 提炼笔记 · 中文阅读版</title><style>
+:root{color-scheme:light;--paper:#fbfaf6;--ink:#263333;--muted:#657471;--line:#dbe2dc;--accent:#1a625a;--size:19px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Songti SC","Noto Serif CJK SC","STSong",serif;font-size:var(--size);line-height:1.95}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:4px}a:hover{color:#a65531}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #bc784b;outline-offset:3px}
+.layout{max-width:1480px;margin:auto;display:grid;grid-template-columns:285px minmax(0,1fr);gap:68px;padding:0 48px 80px 24px}
+.sidebar{position:sticky;top:0;height:100vh;overflow:auto;border-right:1px solid var(--line);padding:34px 25px 40px 4px;font:14px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+.brand{display:block;font-size:19px;font-weight:650;text-decoration:none;margin-bottom:5px}.sidebar small{color:var(--muted)}.sidebar summary{cursor:pointer;font-weight:650;padding:24px 0 10px}.search-label{display:block;color:var(--muted);font-size:12px;margin-top:10px}.sidebar input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:white;font:inherit;margin:5px 0 16px}.sidebar ol{list-style:none;padding:0;margin:0}.sidebar li{margin:2px 0}.sidebar li a{display:block;padding:8px 10px;border-radius:5px;text-decoration:none;color:#40534f}.sidebar li a:hover{background:#e9efea}.sidebar li a.current{background:#e4ede7;color:#12534a;font-weight:600}.nav-number{font-size:11px;color:#7c8d87;display:inline-block;min-width:24px;font-variant-numeric:tabular-nums}.extras{border-top:1px solid var(--line);margin-top:24px;padding-top:18px}.extras a{display:block;margin:10px 0}
+main{max-width:820px;min-width:0;padding-top:64px}.book-header{padding:0 0 50px;border-bottom:1px solid var(--line);margin-bottom:50px}.eyebrow{font:12px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;letter-spacing:.2em;color:var(--muted)}.book-header h1{font-size:52px;line-height:1.25;letter-spacing:.03em;margin:17px 0}.subtitle{font-size:20px;color:#536862;margin:0}.edition-meta{font:13px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;color:var(--muted);margin-top:24px}.controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:25px;font:13px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}.controls button{font:inherit;border:1px solid var(--line);border-radius:5px;background:transparent;padding:7px 12px;cursor:pointer;color:var(--ink)}.controls button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:white}
+.chapter{padding-bottom:65px;margin-bottom:64px;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.chapter-label{font:11px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;letter-spacing:.13em;color:var(--muted);margin-bottom:12px}.chapter h1{font-size:31px;line-height:1.5;margin:0 0 28px}.chapter h2{font-size:24px;line-height:1.6;margin:44px 0 20px;color:#164d47}.chapter h3{font-size:21px;line-height:1.6;margin:30px 0 15px}.chapter h4{font-size:19px;margin:25px 0 12px}.chapter p{margin:0 0 1.05em}.chapter strong{font-weight:700}.chapter ul,.chapter ol{padding-left:1.5em;margin:1em 0}.chapter li{padding-left:.12em;margin:.45em 0}.chapter blockquote{margin:25px 0;padding:19px 25px;border-left:3px solid #77a092;background:#eff3ed;font-size:.96em}.chapter blockquote>:last-child{margin-bottom:0}.table-wrap{overflow-x:auto;margin:28px 0;border:1px solid var(--line);border-radius:5px}table{border-collapse:collapse;width:100%;font:16px/1.8 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}th,td{text-align:left;vertical-align:top;padding:12px 15px;border-bottom:1px solid var(--line);min-width:110px}th{background:#edf1eb;font-weight:650}tbody tr:last-child td{border-bottom:0}.chapter img{max-width:100%;height:auto;display:block;margin:30px auto;background:white}.chapter figure{margin:28px 0}.chapter figcaption{font-size:14px;line-height:1.7;text-align:center;color:var(--muted)}code{font-size:.86em;background:#eaf0e9;border-radius:3px;padding:2px 5px;overflow-wrap:anywhere}pre{white-space:pre-wrap;font-size:15px;background:#eef2eb;padding:18px;border-radius:5px}pre code{padding:0;background:transparent}.footnotes{font-size:14px;line-height:1.8;color:#596a63;margin-top:36px}.footnote-ref{text-decoration:none;font-family:system-ui}.back-top{font:13px/1.7 system-ui;display:inline-block;margin-top:24px}.read-footer{font:13px/1.8 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;color:var(--muted)}
+@media(max-width:1000px){.layout{grid-template-columns:235px minmax(0,1fr);gap:35px;padding-right:30px}.sidebar{padding-right:18px}main{padding-top:45px}}
+@media(max-width:720px){body{font-size:var(--size)}.layout{display:block;padding:0 22px 50px}.sidebar{position:relative;height:auto;border:0;border-bottom:1px solid var(--line);padding:20px 0}.sidebar details[open] ol{max-height:48vh;overflow:auto}.sidebar summary{padding:10px 0}.extras{display:flex;gap:18px;flex-wrap:wrap}.extras a{margin:0}main{padding-top:35px}.book-header h1{font-size:39px}.book-header{padding-bottom:30px;margin-bottom:32px}.chapter h1{font-size:27px}.chapter h2{font-size:22px}.chapter{padding-bottom:36px;margin-bottom:38px}.chapter blockquote{padding:15px 18px}th,td{padding:10px}.controls button{min-height:40px}}
+@media print{.table-wrap{overflow:visible}body{background:white;font-size:11pt;line-height:1.7}.layout{display:block;padding:0;max-width:none}.sidebar,.controls,.back-top{display:none}main{max-width:none;padding:0}.book-header{page-break-after:always;border:0}.chapter{page-break-before:always;padding:0;border:0}.chapter h1{font-size:24pt}.chapter h2{font-size:17pt;break-after:avoid}table{font-size:9pt}a{color:inherit}blockquote,figure,tr{break-inside:avoid}}
+</style></head><body id="top"><div class="layout"><aside class="sidebar"><a class="brand" href="#top">超越感觉 · 提炼笔记</a><small>中文译本 · 离线阅读</small><details id="outline" open><summary>阅读目录</summary><label class="search-label" for="chapter-search">查找章节</label><input id="chapter-search" type="search" placeholder="输入章节关键词"><nav aria-label="章节目录"><ol><li><a class="chapter-link" href="#note-1">《超越感觉》可执行原则手册</a></li><li><a class="chapter-link" href="#note-2">《超越感觉》逐章原则提取台账</a></li><li><a class="chapter-link" href="#note-3">第 14–15 章提取台账：逻辑谬误与问题组合</a></li></ol></nav></details><div class="extras"><a href="阅读版.html">返回正文 ↗</a></div></aside><main><header class="book-header"><div class="eyebrow">THINK FRAMEWORK · 中文书架</div><h1>超越感觉 · 提炼笔记</h1><p class="subtitle">可执行原则、章节台账与补充笔记</p><p class="edition-meta">依据项目现有文本翻译 · 保留案例、练习与注释</p><div class="controls"><span>正文字号</span><button type="button" data-size="17" aria-pressed="false">小</button><button type="button" data-size="19" aria-pressed="true">标准</button><button type="button" data-size="22" aria-pressed="false">大</button></div></header><article class="chapter" id="note-1"><h1 id="note-1-超越感觉可执行原则手册">《超越感觉》可执行原则手册</h1>
+<blockquote>
+<p>这是 <code>vincent</code> 的核心方法库。内容仅以文森特·瑞安·鲁吉罗的 <em>超越感觉</em> 为方法论核心，并由 <code>chapter-principles.md</code> 的逐章台账校验。</p>
+<p>原则中的历史案例只说明方法怎样应用，不构成今天的事实证据。处理时效性或高风险事实时，应另行查找当前可靠来源。</p>
+</blockquote>
+<h2 id="note-1-如何使用">如何使用</h2>
+<ul>
+<li><code>执行动作</code> 是可观察、可执行的动作。</li>
+<li><code>适用时机</code> 是触发信号，不表示每次都要把整套清单跑完。</li>
+<li><code>具体做法</code> 给出最小充分步骤；应按风险和复杂度缩放。</li>
+<li><code>诊断问题</code> 是 <code>vincent</code> 可直接提出的问题。</li>
+<li><code>使用边界</code> 防止原则被机械化或过度使用。</li>
+<li><code>资料来源</code> 给出章节、主题小节与源文件；多个来源表示该原则是书内跨章综合，而非外部添加。</li>
+</ul>
+<hr />
+<h2 id="note-1-一思考背景与姿态">一、思考背景与姿态</h2>
+<h3 id="note-1-ap-01-把第一反应标为暂定判断">AP-01 把第一反应标为暂定判断</h3>
+<ul>
+<li><strong>执行动作</strong>：记录最初的赞成、反感、恐惧或确信，但在检查前不给它最终地位。</li>
+<li><strong>适用时机</strong>：议题一出现，你立刻觉得“显然如此”“绝不可能”或情绪强烈。</li>
+<li><strong>具体做法</strong>：按书中四步做：① 把第一反应视为暂定判断，无论它多有吸引力，都先不急着接受；② 问自己为何如此反应，是否借自父母、朋友、名人、虚构角色或媒体，以及哪些经历塑造了这种反应；③ 至少想出一种其他可能的反应；④ 问另一种反应是否更合适，并抵抗惯性反应的牵引。</li>
+<li><strong>诊断问题</strong>：<code>我的第一反应是什么？它是我审查后的判断，还是环境替我形成的反应？</code></li>
+<li><strong>使用边界</strong>：暂定不等于否定直觉；直觉可指出值得调查的方向。</li>
+<li><strong>资料来源</strong>：第 1 章 <em>你是谁？</em>，关于环境影响和第一反应的论述；<code>beyond-feelings/004_who-are-you.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-02-把感受与直觉当线索不当裁决">AP-02 把感受与直觉当线索，不当裁决</h3>
+<ul>
+<li><strong>执行动作</strong>：先辨认感受可能提示的价值、风险、欲望、身份威胁或模式，再要求独立检验。</li>
+<li><strong>适用时机</strong>：主要理由是“我就是觉得”“直觉告诉我”或一种难以解释的强烈不安。</li>
+<li><strong>具体做法</strong>：命名感受；问它可能在提示什么；生成至少一个可检验假说；寻找支持和削弱该假说的证据。</li>
+<li><strong>诊断问题</strong>：<code>这个感受在提示什么，而什么独立证据能检验它？</code></li>
+<li><strong>使用边界</strong>：不要因感受不是证明就轻视它；也不要因它真实而把它等同于外部事实。</li>
+<li><strong>资料来源</strong>：第 2 章 <em>什么是批判性思维？</em>，关于感受、直觉与推理的论述；第 22 章开篇关于判断的说明；<code>beyond-feelings/005_what-is-critical-thinking.md</code>，<code>beyond-feelings/025_forming-judgments.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-03-追溯判断的形成来源">AP-03 追溯判断的形成来源</h3>
+<ul>
+<li><strong>执行动作</strong>：检查时代、地域、家庭、教育、同伴、职业、媒体、群体身份和个人经历怎样塑造当前看法。</li>
+<li><strong>适用时机</strong>：立场与身份高度绑定，或你很难想象理性的人为何会持不同看法。</li>
+<li><strong>具体做法</strong>：列出三个主要影响来源；区分亲自审查所得与继承所得；设想一种不同成长环境下可能形成的看法。</li>
+<li><strong>诊断问题</strong>：<code>如果我的成长环境不同，我可能会怎样看这件事？</code></li>
+<li><strong>使用边界</strong>：解释观点来源不等于反驳观点；来源分析之后仍须评价内容和证据。</li>
+<li><strong>资料来源</strong>：第 1 章 <em>你是谁？</em>，关于时间、地点、家庭、群体和大众文化的影响；<code>beyond-feelings/004_who-are-you.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-04-准确标注自己的认知状态">AP-04 准确标注自己的认知状态</h3>
+<ul>
+<li><strong>执行动作</strong>：明确区分确知、假定、猜测、推测和看法。</li>
+<li><strong>适用时机</strong>：你准备说“我知道”，却无法说明可靠的获知路径；或把未经检验的前提当作事实。</li>
+<li><strong>具体做法</strong>：给当前说法贴上认知标签；说明信息来自直接观察、报告还是研究；列出尚未验证的部分；只在经过核查后提高标签强度。</li>
+<li><strong>诊断问题</strong>：<code>我是真的知道，还是在假定、猜测或推测？</code></li>
+<li><strong>使用边界</strong>：认知标签不是修辞性谦虚；证据充分时也应清楚说出知道什么。</li>
+<li><strong>资料来源</strong>：第 4 章 <em>“知道”意味着什么？</em>，关于确知、假定、猜测、推测的区分；<code>beyond-feelings/007_what-does-it-mean-to-know.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-05-用现实符合度评价真伪">AP-05 用现实符合度评价真伪</h3>
+<ul>
+<li><strong>执行动作</strong>：把“它令人舒适、熟悉、流行或符合身份”与“它符合现实”分开。</li>
+<li><strong>适用时机</strong>：一个观点主要因共识、权威、传统、个人确信或心理安慰而显得可靠。</li>
+<li><strong>具体做法</strong>：暂时移除来源和情感标签；列出主张对现实作出的可观察承诺；比较证据与这些承诺；说明仍可能出错的环节。</li>
+<li><strong>诊断问题</strong>：<code>除去我的确信和偏好，这个说法与现实吻合得怎样？</code></li>
+<li><strong>使用边界</strong>：现实检验不要求绝对无误；它要求让结论随证据质量校准。</li>
+<li><strong>资料来源</strong>：第 3 章 <em>什么是真理？</em>，关于真理与个人确信、感知、共识的论述；<code>beyond-feelings/006_what-is-truth.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-06-区分意见类型并评价形成质量">AP-06 区分意见类型并评价形成质量</h3>
+<ul>
+<li><strong>执行动作</strong>：先判断一个意见是个人偏好、事实判断还是价值判断，再按相应标准审查。</li>
+<li><strong>适用时机</strong>：有人用“这只是我的意见”来终止讨论，或把所有意见视为同等可靠。</li>
+<li><strong>具体做法</strong>：识别意见类型；对事实判断查证现实；对价值判断显化价值和后果；检查是否为有根据的看法；比较相关知识与形成过程。</li>
+<li><strong>诊断问题</strong>：<code>这是偏好，还是一个需要事实或价值理由支持的判断？</code></li>
+<li><strong>使用边界</strong>：表达意见的权利不等于意见质量相同；专家意见有优势但仍可受审查。</li>
+<li><strong>资料来源</strong>：第 5 章 <em>你的看法有多可靠？</em>，关于不同意见和有根据／缺乏根据的看法的论述；<code>beyond-feelings/008_how-good-are-your-opinions.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-07-为重要判断保留更新通道">AP-07 为重要判断保留更新通道</h3>
+<ul>
+<li><strong>执行动作</strong>：预先写明哪些证据会提高、降低信心或改变结论。</li>
+<li><strong>适用时机</strong>：观点持续很久、与身份相连，或你发现自己只在收集支持材料。</li>
+<li><strong>具体做法</strong>：写出当前结论和信心；列出至少一项反证条件；设定何时用新知识重审；出现条件时实际更新。</li>
+<li><strong>诊断问题</strong>：<code>什么证据会让我改判，而我是否真的愿意接受它？</code></li>
+<li><strong>使用边界</strong>：可修订不等于没有立场；当前证据充分时仍可作明确暂定判断。</li>
+<li><strong>资料来源</strong>：第 2 章关于优秀思考者修正观点的论述；第 5 章关于用新知识重审意见的论述；<code>beyond-feelings/005_what-is-critical-thinking.md</code>，<code>beyond-feelings/008_how-good-are-your-opinions.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-08-用写作使思想可检查">AP-08 用写作使思想可检查</h3>
+<ul>
+<li><strong>执行动作</strong>：把模糊反应、问题、理由和结论写成完整陈述，再检查其关系。</li>
+<li><strong>适用时机</strong>：你“心里明白”却难以清楚解释，或一个论证在口头上不断变形。</li>
+<li><strong>具体做法</strong>：写出焦点问题；写出当前主张与主要理由；标记事实、推断和假设；重读并修正含糊、跳跃和矛盾。</li>
+<li><strong>诊断问题</strong>：<code>把它写成一句完整主张后，它仍然站得住吗？</code></li>
+<li><strong>使用边界</strong>：写作是思考工具，不要求先产出正式文章；几句结构化笔记即可。</li>
+<li><strong>资料来源</strong>：第 2 章 <em>什么是批判性思维？</em>，关于写作与思考的论述；第 22 章关于表达会改变和澄清判断的论述；<code>beyond-feelings/005_what-is-critical-thinking.md</code>，<code>beyond-feelings/025_forming-judgments.md</code>。</li>
+</ul>
+<hr />
+<h2 id="note-1-二九类障碍与逻辑谬误">二、九类障碍与逻辑谬误</h2>
+<h3 id="note-1-ap-09-对己方与对方执行对称审查">AP-09 对己方与对方执行对称审查</h3>
+<ul>
+<li><strong>执行动作</strong>：用评价对手的同一证据与推理标准重新评价自己和己方。</li>
+<li><strong>适用时机</strong>：因主张属于“我、我的群体、我的选择”而立刻接受，或因它挑战身份而立刻攻击。</li>
+<li><strong>具体做法</strong>：做来源互换测试；列出你会要求反方提供的证据；向己方提出同样要求；记录标准是否发生变化。</li>
+<li><strong>诊断问题</strong>：<code>如果同一论点来自对方，我会怎样判断？</code></li>
+<li><strong>使用边界</strong>：对称审查不是假装双方证据相等，也不是为了显得公正而贬低己方。</li>
+<li><strong>资料来源</strong>：第 6 章 <em>我的更好</em>，识别与处理该问题的论述；<code>beyond-feelings/009_the-basic-problem-mind-is-better.md</code>。</li>
+<li><strong>原文短语的译法</strong>：<code>我的更好。</code></li>
+</ul>
+<h3 id="note-1-ap-10-把对变化的不适与反证分开">AP-10 把对变化的不适与反证分开</h3>
+<ul>
+<li><strong>执行动作</strong>：暂停对新事物的初始好恶，按证据、目的和后果比较新旧方案。</li>
+<li><strong>适用时机</strong>：主要反应是“以前不是这样”“这让我不舒服”或“传统一直如此”。</li>
+<li><strong>具体做法</strong>：命名不适；检查旧做法原始目的是否仍存在；列出新旧各自的理由与后果；再作判断。</li>
+<li><strong>诊断问题</strong>：<code>我拒绝它是因为它不合理，还是因为它不熟悉？</code></li>
+<li><strong>使用边界</strong>：新奇也不是优点；本原则要求公平评价，而不是偏爱变化。</li>
+<li><strong>资料来源</strong>：第 7 章 <em>抗拒改变</em>，关于熟悉感、传统和初始反应的论述；<code>beyond-feelings/010_resistance-to-change.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-11-让证据而非归属决定立场">AP-11 让证据而非归属决定立场</h3>
+<ul>
+<li><strong>执行动作</strong>：扫描从众与反向从众，主动引入群体外观点。</li>
+<li><strong>适用时机</strong>：选择能换取接纳、认可、身份或“显得独立”；多数或少数地位被当作证明。</li>
+<li><strong>具体做法</strong>：设想选择无人知晓；查找群体外的知情意见；列出真正基于证据的理由；删除只表达人数或身份的理由。</li>
+<li><strong>诊断问题</strong>：<code>如果无人知道我的选择，我仍会这样判断吗？</code></li>
+<li><strong>使用边界</strong>：共识可以是值得调查的信号；它只是不能代替内容检验。</li>
+<li><strong>资料来源</strong>：第 8 章 <em>从众</em>，关于从众与反向从众的论述；<code>beyond-feelings/011_conformity.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-12-区分推理与合理化">AP-12 区分推理与合理化</h3>
+<ul>
+<li><strong>执行动作</strong>：分别写出“我希望是真的”和“证据支持的”，检查是否从想要的结论倒找理由。</li>
+<li><strong>适用时机</strong>：承认错误会威胁自我形象、角色、名誉或观众评价；遭遇反证后开始否认、转移或发怒。</li>
+<li><strong>具体做法</strong>：辨认面子利害；写出希望的结论；独立列出证据；检查理由是在证据前还是结论后形成；允许自己明确修正。</li>
+<li><strong>诊断问题</strong>：<code>承认相反结论会威胁我的哪种自我形象？</code></li>
+<li><strong>使用边界</strong>：可能存在动机不等于理由必假；最终仍评价证据和推理。</li>
+<li><strong>资料来源</strong>：第 9 章 <em>维护面子</em>，关于维护面子与自我辩解的论述；<code>beyond-feelings/012_face-saving.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-13-对具体对象逐案评价">AP-13 对具体对象逐案评价</h3>
+<ul>
+<li><strong>执行动作</strong>：不用固定群体标签代替对具体人、机构、事件或方案的调查。</li>
+<li><strong>适用时机</strong>：信息很少时已经“知道答案”，或论证直接从类别跳到个体特征。</li>
+<li><strong>具体做法</strong>：写出具体对象的已知证据；列出类别内差异和反例；仅保留有个体证据支持的判断。</li>
+<li><strong>诊断问题</strong>：<code>我掌握的是这个对象的证据，还是关于其类别的固定印象？</code></li>
+<li><strong>使用边界</strong>：分类是认识世界的必要工具；问题在于把粗略类别当作完整且无例外的判断。</li>
+<li><strong>资料来源</strong>：第 10 章 <em>刻板印象</em>，关于固定分类和过早确定感的论述；<code>beyond-feelings/013_stereotyping.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-14-简化时保留会改变结论的复杂性">AP-14 简化时保留会改变结论的复杂性</h3>
+<ul>
+<li><strong>执行动作</strong>：压缩信息，但保留关键变量、相互作用、权利、条件和例外。</li>
+<li><strong>适用时机</strong>：答案过于整齐、单一原因解释全部，或另一方的重要利益没有出现。</li>
+<li><strong>具体做法</strong>：列出被省略因素；问每项是否可能改变结论；加入必要条件和例外；删去不影响判断的枝节。</li>
+<li><strong>诊断问题</strong>：<code>为了让答案简单，我删掉了哪个可能改变结论的因素？</code></li>
+<li><strong>使用边界</strong>：不要以“复杂”为由逃避结论；目标是保真的简洁，而不是无限罗列。</li>
+<li><strong>资料来源</strong>：第 11 章 <em>过度简化</em>，关于有用简化与扭曲的区分；<code>beyond-feelings/014_oversimplification.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-15-在证据区分解释之前暂缓结论">AP-15 在证据区分解释之前暂缓结论</h3>
+<ul>
+<li><strong>执行动作</strong>：重要问题尚未回答或多个解释同样合理时，降低确定性、使用条件句或暂缓。</li>
+<li><strong>适用时机</strong>：你急于结束不确定；仅凭少量资料、第一印象或单个事件就得出强结论。</li>
+<li><strong>具体做法</strong>：列出未答的重要问题；比较竞争解释；判断证据是否明显偏向其一；若必须行动，写成 <code>如果 A，则…；如果 B，则…</code>。</li>
+<li><strong>诊断问题</strong>：<code>证据真的区分了这些解释，还是我只是急于定论？</code></li>
+<li><strong>使用边界</strong>：暂缓不等于拒绝行动；行动可依据风险、可逆性和条件作暂定选择。</li>
+<li><strong>资料来源</strong>：第 12 章 <em>草率下结论</em>，关于充分证据、条件判断和概率结论的论述；<code>beyond-feelings/015_hasty-conclusions.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-16-把隐含前提写出来并逐项检验">AP-16 把隐含前提写出来并逐项检验</h3>
+<ul>
+<li><strong>执行动作</strong>：找出论证成立必须默认的观念，并检查其担保。</li>
+<li><strong>适用时机</strong>：从前提到结论存在跳跃，或某些观念被当成“不言自明”。</li>
+<li><strong>具体做法</strong>：补全“只有当 ___ 成立时，这个结论才成立”；列出每个前提；寻找证据和替代前提；删除无担保者或降低结论。</li>
+<li><strong>诊断问题</strong>：<code>这句话必须先相信什么才成立？</code></li>
+<li><strong>使用边界</strong>：不是所有假设都无根据；合理经验假设可以保留，但应知道它存在及其边界。</li>
+<li><strong>资料来源</strong>：第 13 章 <em>无根据的假定</em>，关于阅读和聆听“字里行间”的论述；<code>beyond-feelings/016_unwarranted-assumptions.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-17-扫描具名逻辑谬误">AP-17 扫描具名逻辑谬误</h3>
+<ul>
+<li><strong>执行动作</strong>：检查结论跳跃、虚假两难、人身攻击、转移举证责任、虚假因果、稻草人谬误和阻止思考的非理性诉求。</li>
+<li><strong>适用时机</strong>：论证强烈、有说服力，却没有清楚展示证据怎样支持结论。</li>
+<li><strong>具体做法</strong>：逐项问：结论是否推出；是否遗漏选项；是否攻击人；谁负举证责任；是否把先后当因果；是否准确复述；情感、传统、信仰、中庸、权威或常识是在补充理由还是终止审查。</li>
+<li><strong>诊断问题</strong>：<code>这个论证在哪一步从理由跳到了理由不能保证的结论？</code></li>
+<li><strong>使用边界</strong>：某种诉求并非永远不合理；判准是它是否邀请继续思考和提供独立支持。</li>
+<li><strong>资料来源</strong>：第 14 章 <em>逻辑谬误</em>，各具名谬误小节；<code>beyond-feelings/017_unwarranted-assumptions.md</code>（原文件误标）。</li>
+</ul>
+<h3 id="note-1-ap-18-发现谬误后仍独立评价结论">AP-18 发现谬误后仍独立评价结论</h3>
+<ul>
+<li><strong>执行动作</strong>：把“论证有缺陷”与“结论为假”分开处理。</li>
+<li><strong>适用时机</strong>：识别到谬误后想立即宣布对方结论错误，或用 <code>谬误谬误（因论证有误就认定结论必错）</code> 结束调查。</li>
+<li><strong>具体做法</strong>：说明谬误削弱了哪一支持链；移除该链；寻找结论是否还有独立证据；重新校准结论而非自动反转。</li>
+<li><strong>诊断问题</strong>：<code>去掉这段错误推理后，结论还有什么独立支持？</code></li>
+<li><strong>使用边界</strong>：不自动判假也不意味着忽略谬误；它仍会降低现有论证的支持力。</li>
+<li><strong>资料来源</strong>：第 14 章 <em>逻辑谬误</em>，章首和章末关于识别谬误与评价最合理观点的警告；<code>beyond-feelings/017_unwarranted-assumptions.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-19-找到错误连锁的最早环节">AP-19 找到错误连锁的最早环节</h3>
+<ul>
+<li><strong>执行动作</strong>：追踪偏差怎样互相触发，并优先纠正最早的启动点。</li>
+<li><strong>适用时机</strong>：同一判断同时出现身份偏爱、选择性取证、刻板印象、夸张和合理化。</li>
+<li><strong>具体做法</strong>：按时间或因果顺序画出链条；识别第一环；设计一个能在第一环暂停的动作；再检查后续错误是否随之减弱。</li>
+<li><strong>诊断问题</strong>：<code>哪个最早的错误启动了后面的连锁？</code></li>
+<li><strong>使用边界</strong>：链条是诊断模型，不要求每个案例严格遵循固定顺序。</li>
+<li><strong>资料来源</strong>：第 15 章 <em>思维问题的交织</em>，克劳德、阿尔玛、山姆案例与问题汇总；<code>beyond-feelings/018_the-problems-in-combination.md</code>。</li>
+</ul>
+<hr />
+<h2 id="note-1-三自知与观察">三、自知与观察</h2>
+<h3 id="note-1-ap-20-建立个人偏差风险清单">AP-20 建立个人偏差风险清单</h3>
+<ul>
+<li><strong>执行动作</strong>：诚实盘点自己最常见的思考优势、弱点和触发情境。</li>
+<li><strong>适用时机</strong>：重要判断反复出现相同失误，或你只会在事后认出偏差。</li>
+<li><strong>具体做法</strong>：逐项检查第 6—14 章的九类问题；记录真实例子；标出高频和高损害项；选出当前最需监控的两三项。</li>
+<li><strong>诊断问题</strong>：<code>在这类情境中，我最容易先犯哪一种错误？</code></li>
+<li><strong>使用边界</strong>：清单不是人格标签，也不能拿来心理分析或贬低他人。</li>
+<li><strong>资料来源</strong>：第 16 章 <em>认识自己</em>，自我盘点与诚实盘点部分；<code>beyond-feelings/019_knowing-yourself.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-21-在高风险情境前预判自己的失误">AP-21 在高风险情境前预判自己的失误</h3>
+<ul>
+<li><strong>执行动作</strong>：在进入已知触发情境前，明确预期偏差并安排抵抗动作。</li>
+<li><strong>适用时机</strong>：议题触及政治、宗教、名誉、群体身份、重大关系或长期承诺。</li>
+<li><strong>具体做法</strong>：命名最可能的偏差；写出它通常如何表现；选择对称审查、反证搜索或暂缓等对应动作；判断后复盘。</li>
+<li><strong>诊断问题</strong>：<code>在开始之前，我最可能怎样骗过自己？</code></li>
+<li><strong>使用边界</strong>：预判是提高警觉，不是预设自己必然错误或陷入自我怀疑。</li>
+<li><strong>资料来源</strong>：第 16 章 <em>认识自己</em>，识别倾向、触发情境并抵抗的三步；<code>beyond-feelings/019_knowing-yourself.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-22-先记录观察再添加解释">AP-22 先记录观察，再添加解释</h3>
+<ul>
+<li><strong>执行动作</strong>：把看到、听到和测到的内容与对其意义、原因和意图的解释分开。</li>
+<li><strong>适用时机</strong>：从语气、姿态、一次异常或一段话直接推断动机与品格。</li>
+<li><strong>具体做法</strong>：用中性语言记录细节；另起一栏列解释；为每个解释写至少一个替代解释；指出需要的额外观察。</li>
+<li><strong>诊断问题</strong>：<code>我实际观察到了什么，哪些只是解释？</code></li>
+<li><strong>使用边界</strong>：纯观察也会受选择与知觉限制；后续仍须检查观察条件。</li>
+<li><strong>资料来源</strong>：第 17 章 <em>善于观察</em>，关于细节、语言、姿态、环境和异常的观察训练；<code>beyond-feelings/020_being-observant.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-23-有计划地训练观察与复盘">AP-23 有计划地训练观察与复盘</h3>
+<ul>
+<li><strong>执行动作</strong>：定期回顾当天忽略、注意和误解的细节，扩大可用于判断的经验材料。</li>
+<li><strong>适用时机</strong>：你常依靠概括印象，却难以指出具体事实；或反复漏掉明显信号。</li>
+<li><strong>具体做法</strong>：每天安排短时间；选一场对话、场景或事件；记录细节、遗漏和异常；比较当时解释与后来信息。</li>
+<li><strong>诊断问题</strong>：<code>今天有什么我起初没注意、后来却改变理解的细节？</code></li>
+<li><strong>使用边界</strong>：观察训练不是监视他人或把每个动作过度解码；单一信号不能证明意图。</li>
+<li><strong>资料来源</strong>：第 17 章 <em>善于观察</em>，关于培养观察习惯和每日练习的部分；<code>beyond-feelings/020_being-observant.md</code>。</li>
+</ul>
+<hr />
+<h2 id="note-1-四厘清议题">四、厘清议题</h2>
+<h3 id="note-1-ap-24-把宽泛主题改写成可回答的问题">AP-24 把宽泛主题改写成可回答的问题</h3>
+<ul>
+<li><strong>执行动作</strong>：明确现在要解释、预测、评价还是决定什么。</li>
+<li><strong>适用时机</strong>：任务只是一个主题词，如“教育”“自由”“换工作”，或问题大到无法确定什么算回答。</li>
+<li><strong>具体做法</strong>：补全对象、动作、条件和期望答案类型；写成问句；检查它是否可以由证据和推理回答。</li>
+<li><strong>诊断问题</strong>：<code>我们现在究竟要解释、评价、预测或决定什么？</code></li>
+<li><strong>使用边界</strong>：问题可以在调查中修订；精确不是一次性锁死范围。</li>
+<li><strong>资料来源</strong>：第 18 章 <em>厘清议题</em>，<code>如何澄清一个议题</code> 的第三步；<code>beyond-feelings/021_clarifying-issues.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-25-把议题簇拆成具体子问题">AP-25 把议题簇拆成具体子问题</h3>
+<ul>
+<li><strong>执行动作</strong>：列出宽泛争议中彼此不同的事实、因果、权利、价值、后果和实施问题。</li>
+<li><strong>适用时机</strong>：双方似乎在争同一件事，实际回答的是不同问题；一个结论试图覆盖整个议题簇。</li>
+<li><strong>具体做法</strong>：尽可能列出具体的小标题；把每个改写成问句；标注它与其他问题的依赖关系。</li>
+<li><strong>诊断问题</strong>：<code>这个大议题实际包含哪些彼此不同的小问题？</code></li>
+<li><strong>使用边界</strong>：拆分不应使整体关系消失；最终还需重新整合相关子问题。</li>
+<li><strong>资料来源</strong>：第 18 章 <em>厘清议题</em>，<code>如何澄清一个议题</code> 的第一步及堕胎、拳击、青少年犯罪示例；<code>beyond-feelings/021_clarifying-issues.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-26-选择当前能够深入处理的焦点">AP-26 选择当前能够深入处理的焦点</h3>
+<ul>
+<li><strong>执行动作</strong>：按目的、场合、时间和篇幅选取一个或少数子问题。</li>
+<li><strong>适用时机</strong>：分析不断扩张，开始忽略差异、细节和关系；你试图在有限时间内解决整个领域。</li>
+<li><strong>具体做法</strong>：写明当前目的和资源；给子问题排序；选择对结论最关键且可处理者；明确暂不处理的范围。</li>
+<li><strong>诊断问题</strong>：<code>在现有时间和信息下，哪一个子问题值得先深入？</code></li>
+<li><strong>使用边界</strong>：缩小范围不是选择性忽略反证；被排除但会改变结论的事项必须说明。</li>
+<li><strong>资料来源</strong>：第 18 章 <em>厘清议题</em>，<code>如何澄清一个议题</code> 的第二步和关于广度／深度的章首论述；<code>beyond-feelings/021_clarifying-issues.md</code>。</li>
+<li><strong>原文短语的译法</strong>：<code>少即是多。</code></li>
+</ul>
+<h3 id="note-1-ap-27-把焦点问题写下来防止范围漂移">AP-27 把焦点问题写下来防止范围漂移</h3>
+<ul>
+<li><strong>执行动作</strong>：在调查开始前保存清晰问题，并用它判断新方向是否相关。</li>
+<li><strong>适用时机</strong>：讨论随新材料不断换题，或最后回答的已不是最初问题。</li>
+<li><strong>具体做法</strong>：写出一至三个焦点问题；每次加入新材料时说明它回答哪一问；不相关但有价值的内容放入待办而非立即追逐。</li>
+<li><strong>诊断问题</strong>：<code>这条思路正在回答我们写下的哪一个问题？</code></li>
+<li><strong>使用边界</strong>：新证据可证明原问题问错了；此时应明确修订，而非悄悄漂移。</li>
+<li><strong>资料来源</strong>：第 18 章 <em>厘清议题</em>，第三步关于写出问题并防止偏离议题的论述；<code>beyond-feelings/021_clarifying-issues.md</code>。</li>
+</ul>
+<hr />
+<h2 id="note-1-五开展探究">五、开展探究</h2>
+<h3 id="note-1-ap-28-区分事实调查与意见调查">AP-28 区分事实调查与意见调查</h3>
+<ul>
+<li><strong>执行动作</strong>：分别搜集“是什么/发生了什么”的事实和对意义、机制、规范选择的有根据的看法。</li>
+<li><strong>适用时机</strong>：事实陈述、专业解释与价值判断混在一起，彼此被当成同一种证据。</li>
+<li><strong>具体做法</strong>：给待查问题分类；为事实找记录、数据和观察；为解释咨询相关专家；为价值判断显化原则和后果。</li>
+<li><strong>诊断问题</strong>：<code>这里缺的是事实，还是对事实的知情解释与评价？</code></li>
+<li><strong>使用边界</strong>：事实与意见常需结合；分类是为了选择合适检验方式，不是把意见一律降格。</li>
+<li><strong>资料来源</strong>：第 19 章 <em>开展探究</em>，章首关于对事实与看法的调查的部分；<code>beyond-feelings/022_conducting-inquiry.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-29-把自身经验当起点而不是终点">AP-29 把自身经验当起点，而不是终点</h3>
+<ul>
+<li><strong>执行动作</strong>：利用直接经验产生问题和线索，同时用更广材料检查其代表性。</li>
+<li><strong>适用时机</strong>：主要依据是“我见过”“我认识一个人”或个人成功/失败案例。</li>
+<li><strong>具体做法</strong>：记录经验具体说明了什么；指出它未覆盖什么；寻找基准、其他案例和研究；再决定可推广范围。</li>
+<li><strong>诊断问题</strong>：<code>我的经验能提出什么问题，又不能证明什么？</code></li>
+<li><strong>使用边界</strong>：不要因经验有限就完全丢弃它；直接观察可能揭示正式资料忽略的事项。</li>
+<li><strong>资料来源</strong>：第 19 章 <em>开展探究</em>，<code>去哪里寻找信息</code> 中关于自身经验与观察的部分；<code>beyond-feelings/022_conducting-inquiry.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-30-覆盖所有直接相关领域">AP-30 覆盖所有直接相关领域</h3>
+<ul>
+<li><strong>执行动作</strong>：列出能实质改变答案的学科、专业与利益相关者，并从每一直接相关领域取证。</li>
+<li><strong>适用时机</strong>：复杂问题只从最熟悉、最便利或最支持己见的领域研究。</li>
+<li><strong>具体做法</strong>：从问题中的事实、机制、权利和后果推导相关领域；为每个领域找事实和知情意见；说明尚未覆盖的领域。</li>
+<li><strong>诊断问题</strong>：<code>还有哪个直接相关领域可能改变答案？</code></li>
+<li><strong>使用边界</strong>：不要求无止境跨学科扩张；只覆盖对具体焦点有直接影响者。</li>
+<li><strong>资料来源</strong>：第 19 章 <em>开展探究</em>，<code>探究到什么程度才算够？</code> 及直接相关领域示例；<code>beyond-feelings/022_conducting-inquiry.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-31-在最想宣布结案时寻找合格异议">AP-31 在最想宣布“结案”时寻找合格异议</h3>
+<ul>
+<li><strong>执行动作</strong>：找到支持己见的权威后，继续寻找最可靠的反对意见和反证。</li>
+<li><strong>适用时机</strong>：一两个受尊重的思想者与你一致，你便觉得 <code>就此结案</code>。</li>
+<li><strong>具体做法</strong>：寻找相关领域的合格异议者；阅读其最强理由；记录它能解释而己方遗漏的事实；更新调查范围或信心。</li>
+<li><strong>诊断问题</strong>：<code>最有资格反对我的人会拿出什么证据？</code></li>
+<li><strong>使用边界</strong>：异议的存在不证明双方势均力敌；仍按证据质量判断。</li>
+<li><strong>资料来源</strong>：第 19 章 <em>开展探究</em>，<code>探究到什么程度才算够？</code> 中关于有争议的议题与“就此结案”的警告；<code>beyond-feelings/022_conducting-inquiry.md</code>。</li>
+<li><strong>原文短语的译法</strong>：<code>就此结案。</code></li>
+</ul>
+<h3 id="note-1-ap-32-用覆盖质量而非固定资料量决定何时停止调查">AP-32 用覆盖质量而非固定资料量决定何时停止调查</h3>
+<ul>
+<li><strong>执行动作</strong>：检查相关事实和直接相关领域是否已被认真覆盖，而不以页数、来源数或疲劳感作为停止标准。</li>
+<li><strong>适用时机</strong>：你想用“看了五篇”证明充分，或因还有更多资料而永远不结束。</li>
+<li><strong>具体做法</strong>：回到焦点问题；列出关键事实与领域；标出已覆盖和缺口；询问是否还有一种容易取得且可能推翻结论的信息；据此停止或继续。</li>
+<li><strong>诊断问题</strong>：<code>还有哪一项易得信息可能显著改变结论？</code></li>
+<li><strong>使用边界</strong>：不存在所有问题通用的停止阈值；调查深度应与议题和风险匹配。</li>
+<li><strong>资料来源</strong>：第 19 章 <em>开展探究</em>，<code>探究到什么程度才算够？</code>；<code>beyond-feelings/022_conducting-inquiry.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-33-接受调查可能无定论">AP-33 接受调查可能无定论</h3>
+<ul>
+<li><strong>执行动作</strong>：当人类知识或现有证据不足时，明确记录未知、概率和暂不能回答之处。</li>
+<li><strong>适用时机</strong>：资料长期冲突，或问题在原则上/实践上暂不可检验。</li>
+<li><strong>具体做法</strong>：说明已查明什么；说明未解决的关键点；比较仍存解释；给出最窄的概率判断或暂缓；记录未来可能提供答案的证据。</li>
+<li><strong>诊断问题</strong>：<code>现有调查允许负责地说什么，又不允许说什么？</code></li>
+<li><strong>使用边界</strong>：无定论不意味着调查无价值；知情但有限的答案通常优于无知猜测。</li>
+<li><strong>资料来源</strong>：第 19 章 <em>开展探究</em>，<code>有些调查无法得出明确结论</code>；<code>beyond-feelings/022_conducting-inquiry.md</code>。</li>
+</ul>
+<hr />
+<h2 id="note-1-六解释证据">六、解释证据</h2>
+<h3 id="note-1-ap-34-检查自己观察的条件与典型性">AP-34 检查自己观察的条件与典型性</h3>
+<ul>
+<li><strong>执行动作</strong>：评价知觉条件、心理状态、态度偏向和案例代表性。</li>
+<li><strong>适用时机</strong>：判断依赖亲眼所见或亲身经历。</li>
+<li><strong>具体做法</strong>：检查速度、距离、光线、天气和障碍；检查疲劳、恐惧、愤怒和期待；问案例是常态还是例外；降低超出观察的推广。</li>
+<li><strong>诊断问题</strong>：<code>哪些环境或心理条件可能让我的观察失真？</code></li>
+<li><strong>使用边界</strong>：存在误差可能不等于观察毫无价值；应按具体条件调整权重。</li>
+<li><strong>资料来源</strong>：第 20 章 <em>解释证据</em>，<code>如果证据来自你自己的经历或直接观察</code>；<code>beyond-feelings/023_interpreting-evidence.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-35-检查他人报告的传播链与独立一致性">AP-35 检查他人报告的传播链与独立一致性</h3>
+<ul>
+<li><strong>执行动作</strong>：确认报告者是否亲历、是否可靠、经过多少次转述，以及独立报告是否一致。</li>
+<li><strong>适用时机</strong>：证据来自新闻转述、传闻、证人报告或“有人说”。</li>
+<li><strong>具体做法</strong>：追溯到最初观察者；检查其观察条件和准确性记录；区分互相复制与真正独立；保留冲突而非强行统一。</li>
+<li><strong>诊断问题</strong>：<code>这是亲历报告，还是已经经过多次改写的转述？</code></li>
+<li><strong>使用边界</strong>：声誉和一致性提高可信度，但不能保证正确；多个报告也可能共享同一错误来源。</li>
+<li><strong>资料来源</strong>：第 20 章 <em>解释证据</em>，<code>如果证据来自他人的经历或观察</code>；<code>beyond-feelings/023_interpreting-evidence.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-36-检查研究与媒体证据的范围细节和遗漏">AP-36 检查研究与媒体证据的范围、细节和遗漏</h3>
+<ul>
+<li><strong>执行动作</strong>：检查载体、作者、样本、问题设计、范围、研究细节和被省略的反证。</li>
+<li><strong>适用时机</strong>：论证引用文章、书籍、电视节目、调查或研究结果。</li>
+<li><strong>具体做法</strong>：比较其他证据；评价来源是在追求耸动效果，还是在负责任地提供信息；检查作者是否常作缺乏支持的断言；核对样本人数、地域、职业、年龄和问题；寻找原材料与挑战性证据。</li>
+<li><strong>诊断问题</strong>：<code>这个来源提供了足够细节，让它的结论范围得到支持吗？</code></li>
+<li><strong>使用边界</strong>：来源声誉只是初筛，不代替阅读内容；明显立场要求更谨慎，但不自动判假。</li>
+<li><strong>资料来源</strong>：第 20 章 <em>解释证据</em>，<code>如果证据来自你的资料调查</code>；<code>beyond-feelings/023_interpreting-evidence.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-37-为同一证据生成多个认真解释">AP-37 为同一证据生成多个认真解释</h3>
+<ul>
+<li><strong>执行动作</strong>：在选择解释前，提出至少两个能与现有事实竞争的解释。</li>
+<li><strong>适用时机</strong>：一个故事过于顺畅，或从相关、先后和单一行为直接跳到原因或动机。</li>
+<li><strong>具体做法</strong>：列出首选解释；加入巧合、共同原因、反向因果、选择偏差、测量误差等可能；写出每个解释预期看到的额外证据。</li>
+<li><strong>诊断问题</strong>：<code>还有什么不同机制也能产生同样观察？</code></li>
+<li><strong>使用边界</strong>：替代解释必须与事实相容且有实际可能，不是为了拖延而无限想象。</li>
+<li><strong>资料来源</strong>：第 20 章 <em>解释证据</em>，<code>寻找最合理的解释</code>；第 14 章 <code>虚假因果</code>；<code>beyond-feelings/023_interpreting-evidence.md</code>，<code>beyond-feelings/017_unwarranted-assumptions.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-38-用覆盖与协调选择最佳解释">AP-38 用覆盖与协调选择最佳解释</h3>
+<ul>
+<li><strong>执行动作</strong>：优先选择覆盖全部事实、较好协调冲突且无需大量临时补丁的解释。</li>
+<li><strong>适用时机</strong>：已有多个解释，需要决定哪个最合理。</li>
+<li><strong>具体做法</strong>：为每个解释列覆盖事实、冲突事实和额外假设；比较整体拟合；若两者同样符合，保留并等待新证据。</li>
+<li><strong>诊断问题</strong>：<code>哪一种解释覆盖事实最多、协调冲突最好？</code></li>
+<li><strong>使用边界</strong>：最熟悉、最流行或最合偏好的解释不因此胜出；也不要强迫选出唯一解释。</li>
+<li><strong>资料来源</strong>：第 20 章 <em>解释证据</em>，<code>寻找最合理的解释</code>；<code>beyond-feelings/023_interpreting-evidence.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-39-把人表达方式动机与观点正确性分开">AP-39 把人、表达方式、动机与观点正确性分开</h3>
+<ul>
+<li><strong>执行动作</strong>：分别评价人物、修辞、可能动机和主张与现实的符合度。</li>
+<li><strong>适用时机</strong>：因喜欢作者、讨厌说话方式、敬畏权威或怀疑利益关系而直接接受/拒绝观点。</li>
+<li><strong>具体做法</strong>：先重述主张；暂时移除人物标签和风格；评价证据；再把动机作为可能影响选择性呈现的线索，而非真假判决。</li>
+<li><strong>诊断问题</strong>：<code>如果相同内容由另一个人用另一种语气表达，我会怎样评价？</code></li>
+<li><strong>使用边界</strong>：人物信誉与动机可影响证据权重和调查深度；只是不能单独决定结论。</li>
+<li><strong>资料来源</strong>：第 20 章 <em>解释证据</em>，<code>作出重要区分</code> 的三个区分；<code>beyond-feelings/023_interpreting-evidence.md</code>。</li>
+</ul>
+<hr />
+<h2 id="note-1-七分析观点">七、分析观点</h2>
+<h3 id="note-1-ap-40-识别全部断言及其主次结构">AP-40 识别全部断言及其主次结构</h3>
+<ul>
+<li><strong>执行动作</strong>：从描述、例子和细节中提取断言，并确定中心断言与支撑断言。</li>
+<li><strong>适用时机</strong>：文章较长、观点关系复杂，或批评只抓住一句话而忽略整体。</li>
+<li><strong>具体做法</strong>：逐段寻找主要断言；标记标题、重复和强调；判断哪个断言统摄其余；画出支持与结论关系。</li>
+<li><strong>诊断问题</strong>：<code>这段材料的中心断言是什么，哪些断言在支撑它？</code></li>
+<li><strong>使用边界</strong>：不是每段必有重要断言；例子和描述虽非中心，也可能是关键证据。</li>
+<li><strong>资料来源</strong>：第 21 章 <em>分析观点</em>，<code>理解复杂材料</code> 中识别与排序断言的步骤；<code>beyond-feelings/024_analyzing-viewpoints.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-41-保留量词连接词和条件">AP-41 保留量词、连接词和条件</h3>
+<ul>
+<li><strong>执行动作</strong>：在引用、概括和批评时保留所有／大多数／有些、总是／有时、但是／因此、如果／除非等意义结构。</li>
+<li><strong>适用时机</strong>：复述把弱主张变强、把条件主张变绝对、把描述偷换成规范结论。</li>
+<li><strong>具体做法</strong>：圈出限定词；标记补充、强化、转折和结论连接；写下所有条件；对照概括与原文逐项检查。</li>
+<li><strong>诊断问题</strong>：<code>我的复述是否改变了原文的范围、强度、条件或逻辑连接？</code></li>
+<li><strong>使用边界</strong>：不必机械复制所有词；必须保留任何会改变意义或评价结果的限定。</li>
+<li><strong>资料来源</strong>：第 21 章 <em>分析观点</em>，<code>理解复杂材料</code> 关于限定词、连接关系、条件的步骤；<code>beyond-feelings/024_analyzing-viewpoints.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-42-先写忠实摘要再开始批评">AP-42 先写忠实摘要，再开始批评</h3>
+<ul>
+<li><strong>执行动作</strong>：用对方可能认可的简明概括呈现中心和重要支撑主张。</li>
+<li><strong>适用时机</strong>：准备评估文章、演讲、方案或对手观点。</li>
+<li><strong>具体做法</strong>：完成 AP-40 与 AP-41；写一至两段准确概括；核对没有加入评价；只有概括稳定后再提出质疑。</li>
+<li><strong>诊断问题</strong>：<code>持此观点的人会认可这是其最准确、最有力的版本吗？</code></li>
+<li><strong>使用边界</strong>：善意且忠实的概括不要求替对方发明更强证据，也不妨碍随后指出错误。</li>
+<li><strong>资料来源</strong>：第 21 章 <em>分析观点</em>，<code>理解复杂材料</code> 末段关于准确概括；<code>beyond-feelings/024_analyzing-viewpoints.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-43-对每项主张提出可回答问题">AP-43 对每项主张提出可回答问题</h3>
+<ul>
+<li><strong>执行动作</strong>：把整体好恶拆成针对每项断言的事实、范围、因果、后果和替代方案问题。</li>
+<li><strong>适用时机</strong>：观点引发笼统的“全对/全错”反应，或论证由多个步骤构成。</li>
+<li><strong>具体做法</strong>：给摘要中的句子编号；为每项提出问题；找出哪些答案支持、削弱或要求限定；按问题组织回应。</li>
+<li><strong>诊断问题</strong>：<code>对这一项主张，最能检验它的具体问题是什么？</code></li>
+<li><strong>使用边界</strong>：问题应服务于评价，不是用无穷问题逃避回答；优先高价值问题。</li>
+<li><strong>资料来源</strong>：第 21 章 <em>分析观点</em>，<code>提出问题</code> 与取消成绩评定示例；<code>beyond-feelings/024_analyzing-viewpoints.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-44-同时记录观点的强点弱点与需限定处">AP-44 同时记录观点的强点、弱点与需限定处</h3>
+<ul>
+<li><strong>执行动作</strong>：分别写出同意、不同意、部分同意和仍未知的内容。</li>
+<li><strong>适用时机</strong>：复杂观点被迫归为全对或全错；批评只搜集缺陷，或赞同只搜集优点。</li>
+<li><strong>具体做法</strong>：完成逐项问题；为每项给出评价；汇总强点、弱点、遗漏和可修正版本；说明中心结论是否仍成立。</li>
+<li><strong>诊断问题</strong>：<code>这个观点哪些部分站得住，哪些部分需要拒绝或限定？</code></li>
+<li><strong>使用边界</strong>：同时记录两面不等于各打五十大板；证据可以使一栏明显更强。</li>
+<li><strong>资料来源</strong>：第 21 章 <em>分析观点</em>，<code>提出问题</code> 关于复杂材料通常部分合理、部分不合理的论述；<code>beyond-feelings/024_analyzing-viewpoints.md</code>。</li>
+</ul>
+<hr />
+<h2 id="note-1-八形成与表达判断">八、形成与表达判断</h2>
+<h3 id="note-1-ap-45-追求完整平衡而不是机械折中">AP-45 追求完整平衡，而不是机械折中</h3>
+<ul>
+<li><strong>执行动作</strong>：寻找被主流看法忽略的相关原则、事实和后果，再按证据权重形成结论。</li>
+<li><strong>适用时机</strong>：舆论高度同质、情绪强烈，或“中间答案”因看似温和而自动被选中。</li>
+<li><strong>具体做法</strong>：列出主流视角；寻找被忽视的一面；评价它是否真正相关且有支持；整合后允许结论明显偏向证据更强的一方。</li>
+<li><strong>诊断问题</strong>：<code>当前讨论遗漏了哪个有证据支持的重要面向？</code></li>
+<li><strong>使用边界</strong>：全面公允的看法不等于折中；若证据不对称，合理结论也应不对称。</li>
+<li><strong>资料来源</strong>：第 22 章 <em>形成判断</em>，<code>力求全面公允</code>；第 14 章 <code>诉诸温和</code>；<code>beyond-feelings/025_forming-judgments.md</code>，<code>beyond-feelings/017_unwarranted-assumptions.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-46-用概率表达证据强度">AP-46 用概率表达证据强度</h3>
+<ul>
+<li><strong>执行动作</strong>：无法确定时说明证据提示了哪些可能，而不是以更响亮措辞伪装确定性。</li>
+<li><strong>适用时机</strong>：争议复杂、证据有限或冲突，却必须给出当前判断。</li>
+<li><strong>具体做法</strong>：选择如确定、很可能、较可能、两可、较不可能；简述主要依据；指出最大不确定性；让行动与概率和风险相称。</li>
+<li><strong>诊断问题</strong>：<code>如果不能说确定，证据支持到哪一级概率？</code></li>
+<li><strong>使用边界</strong>：概率不是骑墙；在认真调查后，应说明证据倾向何处。</li>
+<li><strong>资料来源</strong>：第 22 章 <em>形成判断</em>，<code>依据可能性作判断</code>；<code>beyond-feelings/025_forming-judgments.md</code>。</li>
+<li><strong>原文短语的译法</strong>：<code>着眼于可能性。</code></li>
+</ul>
+<h3 id="note-1-ap-47-让判断的范围谓语和限定与证据匹配">AP-47 让判断的范围、谓语和限定与证据匹配</h3>
+<ul>
+<li><strong>执行动作</strong>：使用证据允许的最窄主语、准确谓语，以及必要的时间、地点、人群、条件和例外。</li>
+<li><strong>适用时机</strong>：从局部样本推广到所有人；混淆“已经、可能、能够、应该、必须、将会”；结论缺少适用条件。</li>
+<li><strong>具体做法</strong>：写出证据实际覆盖范围；缩小主语；选择准确的情态表达与谓语；加入条件和例外；检查是否仍超出证据。</li>
+<li><strong>诊断问题</strong>：<code>目前证据最多允许我对谁、在何种条件下、说到多强？</code></li>
+<li><strong>使用边界</strong>：限定不是含糊退缩；也不要加入无证据、无用途的防御性限定。</li>
+<li><strong>资料来源</strong>：第 22 章 <em>形成判断</em>，<code>恰当地限定判断对象</code>、<code>准确表达判断内容</code>、<code>补充所有必要限定</code>；<code>beyond-feelings/025_forming-judgments.md</code>。</li>
+</ul>
+<h3 id="note-1-ap-48-输出克制可修订并连接行动的判断">AP-48 输出克制、可修订并连接行动的判断</h3>
+<ul>
+<li><strong>执行动作</strong>：避免夸张，明确当前结论、信心、范围、不确定性、改判条件和下一步。</li>
+<li><strong>适用时机</strong>：完成一次重要分析，或需要把判断转成决定和后续调查。</li>
+<li><strong>具体做法</strong>：删除无证据支持的绝对词和最高级；按 AP-45—47 校准；使用模板：<code>在 X 条件下，我以 Y 信心认为 Z；最大不确定性是 U；若出现 E，我会改判；下一步是 A。</code></li>
+<li><strong>诊断问题</strong>：<code>怎样表达才能既不超过证据，又足以指导下一步？</code></li>
+<li><strong>使用边界</strong>：克制不等于把明确证据说得模糊；下一步也应与风险、可逆性和信心匹配。</li>
+<li><strong>资料来源</strong>：第 22 章 <em>形成判断</em>，<code>避免夸大</code> 及全章六条准则的综合；第 5 章关于重审意见；<code>beyond-feelings/025_forming-judgments.md</code>，<code>beyond-feelings/008_how-good-are-your-opinions.md</code>。</li>
+</ul>
+<hr />
+<h2 id="note-1-九集成对话协议">九、集成对话协议</h2>
+<h3 id="note-1-协议-a引导式对话默认">协议 A：引导式对话（默认）</h3>
+<p>适用于用户正在形成自己的看法、决定或解释。</p>
+<ol type="1">
+<li>用一句话确认真正的焦点问题；宽泛时应用 AP-24—27。</li>
+<li>请用户给出当前暂定判断、信心和最重要理由。</li>
+<li>每轮只问一个最可能改变判断的高价值问题。</li>
+<li>根据回答选择相关原则，不按 AP 编号机械跑清单。</li>
+<li>优先分离观察、报告、推断、假设、价值、感受和未知。</li>
+<li>逐步检查身份利害、证据、反证、替代解释、限定和后果。</li>
+<li>让用户先形成修订后的判断，再协助按 AP-45—48 校准表达。</li>
+</ol>
+<p>推荐的阶段性小结：</p>
+<ul>
+<li><code>目前站得住的</code></li>
+<li><code>仍有缺口的</code></li>
+<li><code>下一项最有价值的问题</code></li>
+</ul>
+<h3 id="note-1-协议-b独立推理审查">协议 B：独立推理审查</h3>
+<p>适用于用户要求完整批评、严格检验或独立完整的分析。</p>
+<p>按需要输出：</p>
+<ol type="1">
+<li><strong>焦点问题</strong></li>
+<li><strong>当前主张（最强版本）</strong></li>
+<li><strong>观察 / 报告事实 / 推断 / 假设 / 价值 / 感受 / 未知</strong></li>
+<li><strong>关键证据及其质量</strong></li>
+<li><strong>最大证据缺口与反证</strong></li>
+<li><strong>最强反方与其他解释</strong></li>
+<li><strong>偏差、障碍或谬误风险</strong></li>
+<li><strong>暂定判断</strong>：结论、信心、范围、最大不确定性</li>
+<li><strong>改判条件与下一步</strong></li>
+</ol>
+<p>缺少资料时明确合理假设并继续，不因非关键澄清问题中断完整审计。</p>
+<h3 id="note-1-协议-c观点分析">协议 C：观点分析</h3>
+<p>适用于文章、演讲、论证、提案或对话记录。</p>
+<ol type="1">
+<li>识别中心与支撑断言（AP-40）。</li>
+<li>保留量词、连接和条件（AP-41）。</li>
+<li>写忠实摘要（AP-42）。</li>
+<li>对每项提出可回答问题（AP-43）。</li>
+<li>评价证据、范围、因果、隐含前提和后果。</li>
+<li>分别记录强点、弱点、遗漏和可修正版（AP-44）。</li>
+<li>不因作者身份、表达风格或动机直接判定内容（AP-39）。</li>
+</ol>
+<h3 id="note-1-协议-d判断形成">协议 D：判断形成</h3>
+<p>适用于需要作决定或形成可行动结论。</p>
+<ol type="1">
+<li>确认焦点和候选方案。</li>
+<li>明确现有事实、概率、价值与未知。</li>
+<li>比较最佳解释或最强竞争方案。</li>
+<li>检查被忽视的一面，但不制造虚假平衡。</li>
+<li>输出：当前结论、信心、范围、最大不确定性、改判证据、下一行动。</li>
+<li>若证据不能区分，暂缓或采用条件化行动，而非伪装确定。</li>
+</ol>
+<h3 id="note-1-快速四问">快速四问</h3>
+<p>低风险或时间有限时只问：</p>
+<ol type="1">
+<li><code>你现在真正假定的是什么？</code></li>
+<li><code>哪一项证据最可能推翻它？</code></li>
+<li><code>还有什么同样解释得通？</code></li>
+<li><code>目前证据最多允许你说到什么程度？</code></li>
+</ol>
+<hr />
+<h2 id="note-1-覆盖矩阵">覆盖矩阵</h2>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>单元</th>
+<th>主要对应原则 / 角色</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>引言</td>
+<td>全书工作流与协议 A—D</td>
+</tr>
+<tr>
+<td>第 1 章 — 你是谁？</td>
+<td>AP-01、AP-03</td>
+</tr>
+<tr>
+<td>第 2 章 — 什么是批判性思维？</td>
+<td>AP-02、AP-07、AP-08；对话的一问一答原则</td>
+</tr>
+<tr>
+<td>第 3 章 — 什么是真理？</td>
+<td>AP-05、AP-33</td>
+</tr>
+<tr>
+<td>第 4 章 — “知道”意味着什么？</td>
+<td>AP-04</td>
+</tr>
+<tr>
+<td>第 5 章 — 你的看法有多可靠？</td>
+<td>AP-06、AP-07、AP-48</td>
+</tr>
+<tr>
+<td>第 6 章 — 我的更好</td>
+<td>AP-09</td>
+</tr>
+<tr>
+<td>第 7 章 — 抗拒改变</td>
+<td>AP-10</td>
+</tr>
+<tr>
+<td>第 8 章 — 从众</td>
+<td>AP-11</td>
+</tr>
+<tr>
+<td>第 9 章 — 维护面子</td>
+<td>AP-12</td>
+</tr>
+<tr>
+<td>第 10 章 — 刻板印象</td>
+<td>AP-13</td>
+</tr>
+<tr>
+<td>第 11 章 — 过度简化</td>
+<td>AP-14</td>
+</tr>
+<tr>
+<td>第 12 章 — 草率下结论</td>
+<td>AP-15</td>
+</tr>
+<tr>
+<td>第 13 章 — 无根据的假定</td>
+<td>AP-16</td>
+</tr>
+<tr>
+<td>第 14 章 — 逻辑谬误</td>
+<td>AP-17、AP-18；原文件误标说明已记录</td>
+</tr>
+<tr>
+<td>第 15 章 — 思维问题的交织</td>
+<td>AP-19；缺失应用题仅作文本质量说明</td>
+</tr>
+<tr>
+<td>第 16 章 — 认识自己</td>
+<td>AP-20、AP-21</td>
+</tr>
+<tr>
+<td>第 17 章 — 善于观察</td>
+<td>AP-22、AP-23</td>
+</tr>
+<tr>
+<td>第 18 章 — 厘清议题</td>
+<td>AP-24—AP-27</td>
+</tr>
+<tr>
+<td>第 19 章 — 开展探究</td>
+<td>AP-28—AP-33</td>
+</tr>
+<tr>
+<td>第 20 章 — 解释证据</td>
+<td>AP-34—AP-39</td>
+</tr>
+<tr>
+<td>第 21 章 — 分析观点</td>
+<td>AP-40—AP-44</td>
+</tr>
+<tr>
+<td>第 22 章 — 形成判断</td>
+<td>AP-45—AP-48</td>
+</tr>
+<tr>
+<td>一些当代议题</td>
+<td>协议 A—D 的综合应用；历史议题仅作应用，不作当前事实证据</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="note-1-来源边界">来源边界</h2>
+<ul>
+<li>本手册没有融合 <em>研究的艺术</em> 或其他批判性思维框架。</li>
+<li><code>AP-01</code>—<code>AP-48</code> 均可回指本书章节；执行步骤中的现代术语只用于清楚表达书中动作，不增加新的方法论承诺。</li>
+<li>需要当前事实时，可使用网络或其他可靠来源取证，但分析顺序、偏差检查和判断规则仍以本手册为准。</li>
+</ul>
+</article><article class="chapter" id="note-2"><h1 id="note-2-超越感觉逐章原则提取台账">《超越感觉》逐章原则提取台账</h1>
+<blockquote>
+<p>用途：证明从引言、第 1—22 章到最终议题部分均已阅读，并为 <code>actionable-principles.md</code> 提供可追溯依据。</p>
+<p>方法：分章 Markdown 为主要来源；<code>beyond-feelings/beyond-feelings.md</code> 仅用于确认连续性和异常。重复的列表/纯文本块只计一次；<code>P…</code> 转换标记与末尾导航不计入正文；不把历史案例当作当前事实证据。</p>
+</blockquote>
+<h2 id="note-2-文本规范化与已知缺陷">文本规范化与已知缺陷</h2>
+<ul>
+<li><code>009_the-basic-problem-mind-is-better.md</code> 的页首写作 “MIND IS BETTER”，目录与正文语义均支持规范标题 <strong>我的更好</strong>。</li>
+<li><code>017_unwarranted-assumptions.md</code> 的文件名与页首误标；正文实际是第 14 章 <strong>逻辑谬误</strong>。</li>
+<li><code>018_the-problems-in-combination.md</code> 的应用题第 3 组第 3 项只有编号而无题干；保留为已知遗漏，不补造。</li>
+<li>多处存在 OCR、缺词、重复块和过时用语。仅在语义明确时做规范化概括；可疑措辞不作为新增原则的依据。</li>
+<li><code>026_some-contemporary-issues.md</code> 末尾的重复导航块不属于正文。</li>
+</ul>
+<h2 id="note-2-引言全书的任务与结构">引言：全书的任务与结构</h2>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/003_introduction.md</code></li>
+<li><strong>目的</strong>：把批判性思考从抽象品质变成可学习、可练习的过程。</li>
+<li><strong>核心主张</strong>：全书依次处理思考的背景、妨碍思考的问题、形成判断的策略，以及把整套方法应用到现实争议。</li>
+<li><strong>程序与警告</strong>：不能只记术语；必须在议题、观点和判断中反复应用。最终议题部分承担综合练习，而不是引入新的理论体系。</li>
+<li><strong>候选动作</strong>：按“理解背景 → 识别障碍 → 调查与分析 → 形成判断 → 应用复盘”的完整链条处理重要问题。</li>
+<li><strong>依赖</strong>：为第 1—22 章和最终议题部分规定总体进路。</li>
+</ul>
+<h2 id="note-2-第一部分思考的背景">第一部分：思考的背景</h2>
+<h3 id="note-2-第-1-章你是谁">第 1 章：你是谁？</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/004_who-are-you.md</code></li>
+<li><strong>目的</strong>：说明思考者并非无历史、无环境的纯粹理性主体。</li>
+<li><strong>核心主张</strong>：时代、地域、家庭、同伴、文化和大众传播会塑造身份、自我形象、态度和第一反应；自我形象还可能形成自我实现的预言。</li>
+<li><strong>程序</strong>：遇到强烈反应时，追溯其可能来源；设想若成长环境不同，自己会怎样看；把第一反应先标为暂定。</li>
+<li><strong>诊断问题</strong>：<code>这真是我审查后的判断，还是环境替我形成的第一反应？</code></li>
+<li><strong>警告</strong>：承认环境塑造不等于否认个体性；真正的个体性包含对条件作用的审查。</li>
+<li><strong>候选原则</strong>：暂定第一反应；追溯判断来源；检查自我形象怎样影响知觉与行动。</li>
+</ul>
+<h3 id="note-2-第-2-章什么是批判性思维">第 2 章：什么是批判性思维？</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/005_what-is-critical-thinking.md</code></li>
+<li><strong>目的</strong>：界定批判性思考及优秀思考者的习惯。</li>
+<li><strong>核心主张</strong>：批判性思考是评价陈述准确性、证据和推理合理性的过程；最关键的技能是提出相关问题。</li>
+<li><strong>程序</strong>：承认无知；耐心面对复杂性；在证据不足时暂缓；在证据改变时修正；用写作把模糊思想外化并检查。</li>
+<li><strong>诊断问题</strong>：<code>此刻最相关、最可能改变判断的问题是什么？</code></li>
+<li><strong>警告</strong>：直觉可以产生线索或候选答案，但不能替代证据和检验。</li>
+<li><strong>候选原则</strong>：一次提出一个高价值问题；让直觉提出假说而非裁决；把想法写出来接受检查。</li>
+</ul>
+<h3 id="note-2-第-3-章什么是真理">第 3 章：什么是真理？</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/006_what-is-truth.md</code></li>
+<li><strong>目的</strong>：把“真实”从个人确信、偏好和共识中分离出来。</li>
+<li><strong>核心主张</strong>：一个说法是否为真取决于现实如何，而非某人多么确信；视角差异不意味着互相冲突的说法可同时为真。</li>
+<li><strong>程序</strong>：检查感知、转述、专家意见和群体共识与现实的符合度；在现有证据无法决定时保留判断。</li>
+<li><strong>诊断问题</strong>：<code>除去我对它的确信，这个说法与现实吻合得怎样？</code></li>
+<li><strong>警告</strong>：承认人会犯错不等于放弃真理或滑向“各有各的真理”。</li>
+<li><strong>候选原则</strong>：用现实符合度而非心理舒适度评价主张；证据不足时暂缓。</li>
+</ul>
+<h3 id="note-2-第-4-章知道意味着什么">第 4 章：“知道”意味着什么？</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/007_what-does-it-mean-to-know.md</code></li>
+<li><strong>目的</strong>：校准“我知道”这一认知声明。</li>
+<li><strong>核心主张</strong>：确知、假定、猜测、推测不同；确信不等于知识；被动接收的信息可能在传播链中失真。</li>
+<li><strong>程序</strong>：准确标注自己的认知状态；说明可靠的获知路径；验证报告并考虑替代解释后才提升为“知道”。</li>
+<li><strong>诊断问题</strong>：<code>我是真的知道，还是只在假定、猜测或推测？</code></li>
+<li><strong>警告</strong>：认知诚实不是软弱；不知道时应明确说不知道。</li>
+<li><strong>候选原则</strong>：标注认知状态；审查获知路径；不给确信冒充知识的机会。</li>
+</ul>
+<h3 id="note-2-第-5-章你的看法有多可靠">第 5 章：你的看法有多可靠？</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/008_how-good-are-your-opinions.md</code></li>
+<li><strong>目的</strong>：说明“人人有权表达意见”不等于所有意见质量相同。</li>
+<li><strong>核心主张</strong>：意见包含偏好、事实判断和价值判断；有根据的看法通常优于缺乏根据的看法；相关训练与经验有价值，但专家仍会错。</li>
+<li><strong>程序</strong>：先辨认意见类型，再检查形成过程、知识基础和证据；用新知识定期复查旧意见。</li>
+<li><strong>诊断问题</strong>：<code>这是偏好，还是一个需要事实或价值理由支持的判断？</code></li>
+<li><strong>警告</strong>：尊重表达权不要求假装所有观点同样可靠；咨询专家也不等于盲从。</li>
+<li><strong>候选原则</strong>：区分意见类型；优先知情意见；为更新旧意见保留通道。</li>
+</ul>
+<h2 id="note-2-第二部分思维中的问题">第二部分：思维中的问题</h2>
+<h3 id="note-2-第-6-章我的更好">第 6 章：我的更好</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/009_the-basic-problem-mind-is-better.md</code></li>
+<li><strong>目的</strong>：识别因“属于我/我方”而产生的偏爱。</li>
+<li><strong>核心主张</strong>：身份依附会让人高估自己的观念、群体和选择，并贬低外群体或反方。</li>
+<li><strong>程序</strong>：把强烈赞成或反感当作检查信号；用审查反方的标准审查己方；进行来源互换测试。</li>
+<li><strong>诊断问题</strong>：<code>如果同一论点来自对方，我会怎样评价？</code></li>
+<li><strong>警告</strong>：目标不是反对自己或机械贬低己方，而是使用同一证据标准。</li>
+<li><strong>候选原则</strong>：执行对称审查；扫描身份偏爱。</li>
+</ul>
+<h3 id="note-2-第-7-章抗拒改变">第 7 章：抗拒改变</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/010_resistance-to-change.md</code></li>
+<li><strong>目的</strong>：分离对变化的不适与对变化的合理反对。</li>
+<li><strong>核心主张</strong>：陌生感、焦虑和传统受挑战本身不是反证；传统的原始目的可能已经变化或消失。</li>
+<li><strong>程序</strong>：暂停初始好恶；检查传统的目的和当前适用性；依据证据与后果评价新旧方案。</li>
+<li><strong>诊断问题</strong>：<code>我拒绝它是因为它不合理，还是因为它不熟悉？</code></li>
+<li><strong>警告</strong>：新并不自动优于旧；本章要求公平评价，而非崇拜变化。</li>
+<li><strong>候选原则</strong>：把不适与反证分开；重新检查传统的当前适用性。</li>
+</ul>
+<h3 id="note-2-第-8-章从众">第 8 章：从众</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/011_conformity.md</code></li>
+<li><strong>目的</strong>：识别多数、少数和归属欲怎样代替个人判断。</li>
+<li><strong>核心主张</strong>：从众与反向从众都可能让群体态度取代证据；显得独立不等于真正独立思考。</li>
+<li><strong>程序</strong>：主动寻找群体外意见、替代方案和反证；设想自己的选择不被任何人知道时会怎样判断。</li>
+<li><strong>诊断问题</strong>：<code>如果无人知道我的选择，我仍会这样想吗？</code></li>
+<li><strong>警告</strong>：群体共识可成为调查线索，但不是自动证明。</li>
+<li><strong>候选原则</strong>：扫描从众与反向从众；让判断服从证据而非归属。</li>
+</ul>
+<h3 id="note-2-第-9-章维护面子">第 9 章：维护面子</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/012_face-saving.md</code></li>
+<li><strong>目的</strong>：揭示自我形象受威胁时的合理化。</li>
+<li><strong>核心主张</strong>：推理从证据走向结论；合理化从想要的结论倒找理由，以维护自己在自己或他人眼中的形象。</li>
+<li><strong>程序</strong>：辨认受威胁的角色、身份或观众评价；分别写出“我希望什么是真的”和“现实支持什么”。</li>
+<li><strong>诊断问题</strong>：<code>承认相反结论会威胁我的哪种自我形象？</code></li>
+<li><strong>警告</strong>：不能把所有理由都心理化为面子维护；仍须检查其证据内容。</li>
+<li><strong>候选原则</strong>：区分推理与合理化；扫描面子威胁。</li>
+</ul>
+<h3 id="note-2-第-10-章刻板印象">第 10 章：刻板印象</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/013_stereotyping.md</code></li>
+<li><strong>目的</strong>：防止固定分类替代对具体对象的观察。</li>
+<li><strong>核心主张</strong>：刻板印象忽略个体差异和反例，使人在信息很少时便产生虚假的确定感。</li>
+<li><strong>程序</strong>：对具体人、机构和事件逐案评价；在早期出现“我已经知道答案”的感觉时主动寻找反例。</li>
+<li><strong>诊断问题</strong>：<code>我掌握的是这个具体对象的证据，还是关于其类别的固定印象？</code></li>
+<li><strong>警告</strong>：分类本身不可避免；问题在于把粗略分类当作完整判断。</li>
+<li><strong>候选原则</strong>：逐案评价；把过早确定感视为警报。</li>
+</ul>
+<h3 id="note-2-第-11-章过度简化">第 11 章：过度简化</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/014_oversimplification.md</code></li>
+<li><strong>目的</strong>：区分有用简化与扭曲现实的简化。</li>
+<li><strong>核心主张</strong>：若简化删除关键变量、相互作用、权利、条件或例外，就会造成错误判断。</li>
+<li><strong>程序</strong>：列出被省略的因素和反例；检查另一方的权利与利益；为断言补上条件、范围和概率。</li>
+<li><strong>诊断问题</strong>：<code>为了让答案简单，我删掉了哪个可能改变结论的因素？</code></li>
+<li><strong>警告</strong>：批判性思考不要求把所有问题无限复杂化；简化应保真。</li>
+<li><strong>候选原则</strong>：压缩复杂性但不扭曲；寻找遗漏变量和例外。</li>
+</ul>
+<h3 id="note-2-第-12-章草率下结论">第 12 章：草率下结论</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/015_hasty-conclusions.md</code></li>
+<li><strong>目的</strong>：防止证据尚未区分解释时仓促定论。</li>
+<li><strong>核心主张</strong>：当多个解释都合理且证据未明显偏向其一时，应暂缓；概率证据只能支持概率结论。</li>
+<li><strong>程序</strong>：回答重要相关问题后再判断；若必须行动，使用条件句；降低结论强度以匹配证据。</li>
+<li><strong>诊断问题</strong>：<code>证据真的区分了这些解释，还是我只是急于结束不确定？</code></li>
+<li><strong>警告</strong>：暂缓判断不等于永不行动；必要时可基于条件和风险作暂定行动。</li>
+<li><strong>候选原则</strong>：证据不足时暂缓；必须行动时使用条件判断。</li>
+</ul>
+<h3 id="note-2-第-13-章无根据的假定">第 13 章：无根据的假定</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/016_unwarranted-assumptions.md</code></li>
+<li><strong>目的</strong>：使隐含而未经检验的前提可见。</li>
+<li><strong>核心主张</strong>：许多推理依赖“被视为当然”的观念；有些经验性假设合理，有些却没有担保。</li>
+<li><strong>程序</strong>：把论证成立所需的隐含前提逐条写出；为每项寻找证据和替代前提。</li>
+<li><strong>诊断问题</strong>：<code>这句话必须先相信什么才成立？</code></li>
+<li><strong>警告</strong>：不是所有假设都错误；问题是未经意识和检验便让它支配结论。</li>
+<li><strong>候选原则</strong>：显化隐含前提；逐项检验其担保。</li>
+</ul>
+<h3 id="note-2-第-14-章逻辑谬误">第 14 章：逻辑谬误</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/017_unwarranted-assumptions.md</code>（原文件误标）</li>
+<li><strong>目的</strong>：识别推理中的具体逻辑错误。</li>
+<li><strong>具名谬误</strong>：不合逻辑的结论、非此即彼的思维、人身攻击、转移举证责任 / 诉诸无知、虚假因果、稻草人谬误，以及诉诸情感、传统或信仰、温和、权威、常识的非理性诉求。</li>
+<li><strong>程序</strong>：检查结论是否从前提推出；寻找被排除的选项；把人与观点分开；让提出断言者承担支持责任；区分时间先后与因果；还原实际主张；判断某种诉求是在邀请还是阻止继续思考。</li>
+<li><strong>诊断问题</strong>：<code>这个错误只削弱了论证，还是已有独立证据表明结论也错？</code></li>
+<li><strong>关键警告</strong>：发现谬误不自动证明结论为假；上述诉求也不是在所有情境都不合理。</li>
+<li><strong>候选原则</strong>：逐类扫描逻辑谬误；谬误判定后仍独立评价结论。</li>
+</ul>
+<h3 id="note-2-第-15-章思维问题的交织">第 15 章：思维问题的交织</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/018_the-problems-in-combination.md</code></li>
+<li><strong>目的</strong>：说明第 6—14 章的问题会互相触发和强化。</li>
+<li><strong>核心主张</strong>：常见链条包括身份偏爱 → 过度简化 → 面子维护，抗拒改变 → 夸张 → 仓促归因，从众 → 选择性接触 → 刻板化 → 无根据的假定。</li>
+<li><strong>程序</strong>：找出链条最早的启动点；检查一个领域形成的不思考习惯是否扩散；定期复习九类问题。</li>
+<li><strong>诊断问题</strong>：<code>哪个最早的错误启动了后面的连锁？</code></li>
+<li><strong>警告</strong>：这些不是“别人”或低能力者才有的问题；人人都会以不同程度受影响。</li>
+<li><strong>候选原则</strong>：检查障碍连锁；优先纠正最早环节。</li>
+<li><strong>文本说明</strong>：应用题第 3 组第 3 项缺失，不作补写。</li>
+</ul>
+<h2 id="note-2-第三部分思考策略">第三部分：思考策略</h2>
+<h3 id="note-2-第-16-章认识自己">第 16 章：认识自己</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/019_knowing-yourself.md</code></li>
+<li><strong>目的</strong>：把一般偏差知识转成个人风险画像。</li>
+<li><strong>核心程序</strong>：诚实盘点自己的倾向；找出高风险偏差与触发情境；每次判断前预判并抵抗。</li>
+<li><strong>盘点范围</strong>：身份偏爱、抗拒改变、从众、面子维护、刻板印象、过度简化、草率下结论、无根据的假定和谬误倾向，以及优点和弱点。</li>
+<li><strong>诊断问题</strong>：<code>在这类情境中，我最容易先犯哪一种错误？</code></li>
+<li><strong>警告</strong>：自知不是给自己贴永久标签，也不是心理分析他人；它服务于前置防错。</li>
+<li><strong>候选原则</strong>：建立个人偏差清单；在高风险情境前预判错误。</li>
+</ul>
+<h3 id="note-2-第-17-章善于观察">第 17 章：善于观察</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/020_being-observant.md</code></li>
+<li><strong>目的</strong>：训练对现实细节的主动注意。</li>
+<li><strong>核心主张</strong>：观察是调查的原材料；人常因匆忙、习惯和期待忽略言语、语气、遗漏、姿态、环境与异常。</li>
+<li><strong>程序</strong>：先记录观察，再作解释；每天安排短时间回顾所见所闻；注意正常模式与偏离之处。</li>
+<li><strong>诊断问题</strong>：<code>我实际观察到了什么，哪些只是我对观察的解释？</code></li>
+<li><strong>警告</strong>：单一姿态、语气或异常不能直接等同于确定意图。</li>
+<li><strong>候选原则</strong>：分离观察与解释；培养有计划的观察和复盘。</li>
+</ul>
+<h3 id="note-2-第-18-章厘清议题">第 18 章：厘清议题</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/021_clarifying-issues.md</code></li>
+<li><strong>目的</strong>：把宽泛主题缩小为可深入回答的具体问题。</li>
+<li><strong>三步程序</strong>：列出宽泛议题包含的具体小标题；选择符合目的、时间和篇幅的部分；改写成清晰、聚焦、可回答的问题并写下来防止范围漂移。</li>
+<li><strong>诊断问题</strong>：<code>我现在真正要回答的是这个议题簇中的哪一个问题？</code></li>
+<li><strong>警告</strong>：广度不是深度；“少即是多”。即便最终处理整体，也要先识别其组成部分。</li>
+<li><strong>候选原则</strong>：拆分议题簇；选择当前焦点；写出精确问题。</li>
+</ul>
+<h3 id="note-2-第-19-章开展探究">第 19 章：开展探究</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/022_conducting-inquiry.md</code></li>
+<li><strong>目的</strong>：通过调查超越第一印象、感受、先入观念和个人偏好。</li>
+<li><strong>核心主张</strong>：调查事实与意见，并优先参考有根据的看法；自身经验可提供线索但复杂争议不能只靠经验；有些问题暂时或永久无定论。</li>
+<li><strong>程序</strong>：从背景、事实统计、人物资料、新闻/期刊和书籍等来源搜集；覆盖所有直接相关学科；认真查明相关事实并咨询相关领域的知情意见。</li>
+<li><strong>停止标准</strong>：没有固定资料量；找到少数支持己方的权威不是停止理由。停止取决于是否认真覆盖了直接相关事实和领域。</li>
+<li><strong>诊断问题</strong>：<code>还有哪个直接相关领域或合格反方可能改变答案？</code></li>
+<li><strong>警告</strong>：背景阅读不是分析；证据和专家意见都不是不可质疑；无结论的调查仍比无知猜测有价值。</li>
+<li><strong>候选原则</strong>：区分事实与意见；覆盖直接相关领域；主动寻找合格异议；接受调查无定论。</li>
+</ul>
+<h3 id="note-2-第-20-章解释证据">第 20 章：解释证据</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/023_interpreting-evidence.md</code></li>
+<li><strong>目的</strong>：决定证据意味着什么、重要到何种程度，以及如何处理冲突。</li>
+<li><strong>按来源检查</strong>：
+<ul>
+<li>自己的观察：观察条件、身体/心理状态、态度偏向、典型性。</li>
+<li>他人报告：是否亲历、报告者准确性、传播链、独立报告是否一致。</li>
+<li>研究/媒体：与其他证据的一致性、载体声誉、作者是否谨慎和公正、样本与问题设计、范围、细节和可能遗漏的反证。</li>
+</ul></li>
+<li><strong>关键区分</strong>：人与观点；表达方式与内容；动机与观点正确性。</li>
+<li><strong>解释规则</strong>：生成多个解释，选择覆盖事实最多、协调冲突最好者；若多个解释同样符合证据，不强迫选择。</li>
+<li><strong>诊断问题</strong>：<code>哪一种解释最能覆盖全部事实并协调冲突，而不是最熟悉或最合我心意？</code></li>
+<li><strong>警告</strong>：科学资料也需要解释；来源声誉和动机只能影响审查强度，不能单独决定真假。</li>
+<li><strong>候选原则</strong>：按证据来源选择检查问题；分离人、风格、动机与主张；以覆盖与协调选择解释。</li>
+</ul>
+<h3 id="note-2-第-21-章分析观点">第 21 章：分析观点</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/024_analyzing-viewpoints.md</code></li>
+<li><strong>目的</strong>：先精确理解复杂观点，再逐项评价其合理性。</li>
+<li><strong>理解程序</strong>：识别断言；保存所有限定词；梳理补充、强化、转折与结论连接；标出如果／除非等条件；确定中心与支撑断言；写准确的简明概括。</li>
+<li><strong>评价程序</strong>：对概括中的每项主张提出可回答问题，检查事实、范围、因果、后果和替代方案；分别确定同意、不同意和需限定之处。</li>
+<li><strong>诊断问题</strong>：<code>我的概括是否保留了原文的量词、条件、连接和模态强度？</code></li>
+<li><strong>警告</strong>：不得把“可能”（may）改成“是”（is），也不得把“是”（is）偷换成“应该”（should）；复杂观点通常不是全对或全错。</li>
+<li><strong>候选原则</strong>：忠实摘要后再批评；保存限定与论证结构；逐项提出检验问题。</li>
+</ul>
+<h3 id="note-2-第-22-章形成判断">第 22 章：形成判断</h3>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/025_forming-judgments.md</code></li>
+<li><strong>目的</strong>：把调查和分析表达成准确、可辩护的判断。</li>
+<li><strong>六条明示准则</strong>：力求全面公允；依据可能性作判断；恰当地限定判断对象；准确表达判断内容；补充所有必要限定；避免夸大。</li>
+<li><strong>程序</strong>：寻找被忽略的一面但不随大流；不能确定时说明概率；让主语范围等于证据覆盖范围；区分已然、可能、应该、必须和将会；补充时间、地点、群体、条件与例外；宁可克制而不夸张。</li>
+<li><strong>诊断问题</strong>：<code>目前证据允许我说到多强、覆盖多大范围？</code></li>
+<li><strong>警告</strong>：全面公允的看法是反映相关复杂性，不是机械折中；有时证据确实明显支持一方。</li>
+<li><strong>候选原则</strong>：让判断强度和范围匹配证据；精确谓语与限定；避免夸张；以概率表达不确定性。</li>
+</ul>
+<h2 id="note-2-第四部分一些当代议题">第四部分：一些当代议题</h2>
+<ul>
+<li><strong>来源</strong>：<code>beyond-feelings/026_some-contemporary-issues.md</code></li>
+<li><strong>目的</strong>：把全书方法应用到公共争议，而非提供现成答案。</li>
+<li><strong>内容角色</strong>：列举约 37 个当时的社会、政治、伦理和政策议题，要求读者自行缩小问题、更新资料、调查事实与意见、分析观点并形成判断。</li>
+<li><strong>综合程序</strong>：区分事实、因果与价值问题；比较权利、责任、后果和替代方案；将第 1—22 章串成完整实践。</li>
+<li><strong>诊断问题</strong>：<code>这个历史议题若今天重做，哪些事实必须重新调查？</code></li>
+<li><strong>警告</strong>：案例主要来自 20 世纪 80 年代语境，不能直接当作 2026 年事实；其方法论价值与事实时效性必须分开。</li>
+<li><strong>候选原则</strong>：用完整流程处理真实争议；对时效性事实使用当前来源；不把案例中的立场当作作者替读者下的结论。</li>
+</ul>
+<h2 id="note-2-全书依赖链">全书依赖链</h2>
+<ol type="1">
+<li><strong>第 1—5 章</strong>校准思考者、真理、知识和意见。</li>
+<li><strong>第 6—15 章</strong>提供错误模式库，并说明错误会形成连锁。</li>
+<li><strong>第 16—17 章</strong>把错误预防落实到自知与观察。</li>
+<li><strong>第 18—21 章</strong>形成“澄清 → 调查 → 解释证据 → 分析观点”的工作流。</li>
+<li><strong>第 22 章</strong>把工作流压缩成范围、强度和限定均与证据匹配的判断。</li>
+<li><strong>最终议题部分</strong>要求把整条链应用于真实且需要更新资料的争议。</li>
+</ol>
+<h2 id="note-2-台账结论">台账结论</h2>
+<ul>
+<li>引言、全部 22 章和最终议题部分均有来源路径、目的、主张、程序、诊断问题、警告和候选动作。</li>
+<li>可执行手册应保留书中的核心次序，但可合并跨章重复动作。</li>
+<li>任何最终原则必须能回指本台账中的章节和相应小节；无法追溯到本书的通用技巧不得混入核心方法。</li>
+</ul>
+</article><article class="chapter" id="note-3"><h1 id="note-3-第-1415-章提取台账逻辑谬误与问题组合">第 14–15 章提取台账：逻辑谬误与问题组合</h1>
+<h2 id="note-3-范围与定位">0. 范围与定位</h2>
+<ul>
+<li><strong>来源 1</strong>：<code>017_unwarranted-assumptions.md</code>；正文实际对应<strong>第 14 章“逻辑谬误”</strong>，尽管文件名及页首标题误写为 “Unwarranted Assumptions”（无根据的假定）。</li>
+<li><strong>来源 2</strong>：<code>018_the-problems-in-combination.md</code>；第 15 章“思维问题的交织”。</li>
+<li><strong>抽取边界</strong>：保留两章的概念、识别与纠正办法、案例机制、复习表、诊断问题、候选原则、应用题、依赖关系及源文本问题；不解答应用题，不补写缺失内容。</li>
+<li><strong>总定位</strong>：逻辑谬误是推理中的具体错误，通常源于草率处理议题；它与第 6–13 章问题之间没有严格边界，一些逻辑学家也会把其中若干问题视为谬误。</li>
+</ul>
+<h2 id="note-3-第-14-章逻辑谬误总账">1. 第 14 章：逻辑谬误总账</h2>
+<h3 id="note-3-总体判准与关键警告">1.1 总体判准与关键警告</h3>
+<ul>
+<li>一个论证要有效，结论必须从前提（断言）中合乎逻辑地推出，而且应当是不可避免的，而不只是众多可能解释之一。</li>
+<li>识别并避免错误很重要，但评估议题的主要目标始终是找出<strong>最合理、最有支持的观点</strong>。</li>
+<li><strong>关键警告：发现了谬误，并不自动证明结论为假。结论即使由含谬误的推理得出，也仍可能是合理或真实的；必须另行评估其证据与支持。</strong></li>
+</ul>
+<h3 id="note-3-每一种具名谬误识别与纠正">1.2 每一种具名谬误：识别与纠正</h3>
+<h4 id="note-3-不合逻辑的结论">1. 不合逻辑的结论</h4>
+<ul>
+<li><strong>识别</strong>：结论根本不从前提推出，或虽有可能但并非必然推出；把一种可能解释说成确定结论。</li>
+<li><strong>纠正</strong>：检查结论是否由前提不可避免地推出；列出其他可能解释；证据不足时降低结论强度或暂缓判断。</li>
+<li><strong>章内例证</strong>：
+<ul>
+<li>玛丽无故冒犯我，因此我“必须”报复；实际上仍可忽略或宽恕。</li>
+<li>禁枪后“只有罪犯有枪”；警察、军队及符合法律条件者仍可能持枪。</li>
+<li>苏联过去不给公民自由，因此近期民主化“一定”是诱使美国放松警惕的计划；内部社会压力或集体主义与压制的经济代价也是可能解释，现有证据不足以判为很可能，更不足以判为确定。</li>
+</ul></li>
+</ul>
+<h4 id="note-3-非此即彼的思维">2. 非此即彼的思维</h4>
+<ul>
+<li><strong>识别</strong>：把议题可取的立场限定为两个极端，排除温和、有条件或分情形的立场。</li>
+<li><strong>纠正</strong>：主动考虑中间立场和条件化方案；例如可在某些情形支持堕胎、另一些情形反对，也可反对福利滥用而不否认福利需要。</li>
+<li><strong>限定</strong>：这不要求含糊、骑墙或牺牲原则。若全面肯定或全面否定确为最合理立场，就应采用；但不能仅因非此即彼框架而被迫采用。</li>
+</ul>
+<h4 id="note-3-人身攻击">3. 人身攻击</h4>
+<ul>
+<li><strong>识别</strong>：当争议对象是一个观念或议题时，转而攻击持有者的知识、诚信、情绪状态、家庭或人格。</li>
+<li><strong>纠正</strong>：分析议题本身及支持它的理由；只有当人物品格本身就是待审问题时，聚焦个人才适当，例如调查国会议员是否违法或违反伦理。</li>
+<li><strong>章内判准</strong>：核电支持者或反对者中都可能有无知、不诚实或情绪失衡者；发现某一方有这样的人，并不能说明该方观点本身不合理。</li>
+</ul>
+<h4 id="note-3-转移举证责任诉诸无知">4. 转移举证责任／诉诸无知</h4>
+<ul>
+<li><strong>识别</strong>：提出断言后，要求别人证明它是错的，以他人未能反驳代替自己的支持责任。</li>
+<li><strong>纠正</strong>：谁提出断言，谁负责提供支持；他人可以选择反驳，但没有义务替断言者完成证明。</li>
+<li><strong>强度规则</strong>：断言偏离有知识者普遍看法越远，提出者承担的支持责任越大。</li>
+</ul>
+<h4 id="note-3-虚假因果">5. 虚假因果</h4>
+<ul>
+<li><strong>识别</strong>：仅因 B 发生在 A 之后，就断定 A 导致 B；忽略时间相近可能只是巧合。</li>
+<li><strong>纠正</strong>：在额外证据出现前区分先后关系与因果关系，并暂缓判断。</li>
+<li><strong>章内例证</strong>：迷信把从梯子下面走过、打破镜子或黑猫经过之后发生的不幸归因于这些事件；山姆因迟到受警告后作文得 D，便认定教授出于愤怒压低成绩，但没有额外证据时只能保留判断。</li>
+</ul>
+<h4 id="note-3-稻草人谬误">6. 稻草人谬误</h4>
+<ul>
+<li><strong>识别</strong>：假装对手说过某个虚假、夸张或更容易攻击的主张，再反驳这个被替换后的主张。</li>
+<li><strong>纠正</strong>：还原并回应对方实际说过的话；可直接指出对方先把不负责任的话塞进自己嘴里，再据此指责自己不负责任，并要求其回应原主张。</li>
+<li><strong>章内例证</strong>：支持限制攻击性武器销售，被歪曲成自封改革者傲慢决定哪些武器可接受。</li>
+</ul>
+<h4 id="note-3-非理性诉求">7. 非理性诉求</h4>
+<ul>
+<li><strong>总识别</strong>：要求人们按表面、感受或某种非合理性基础接受观点，实质上暗示“此事不必思考，不会出错”。</li>
+<li><strong>总纠正</strong>：错误风险始终存在；用批判性思考降低风险，并区分会邀请思考的合理诉求与会阻止思考的非理性诉求。</li>
+</ul>
+<p>其具名形式如下：</p>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>具名形式</th>
+<th>识别</th>
+<th>纠正</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>诉诸情感</td>
+<td>要求人们不加批判地接受强烈感受，如爱家、爱国、恐惧、怨恨或罪恶感。</td>
+<td>不让情感代替对议题合理性的检验；情感若能引出而非压制审查，则不必然非理性。</td>
+</tr>
+<tr>
+<td>诉诸传统或信仰</td>
+<td>维持旧习俗或信念，仅因为它们一直如此，而非因为它们适用于当前情境。</td>
+<td>检查传统或信念在当前情境中的适用性，不把历史延续本身当作充分理由。</td>
+</tr>
+<tr>
+<td>诉诸温和</td>
+<td>选择温和立场，仅因为它不冒犯任何人，而非因为它最合理。</td>
+<td>依据合理性选择立场；最合理立场可能温和，也可能是全面肯定或否定。</td>
+</tr>
+<tr>
+<td>诉诸权威</td>
+<td>不加质疑地接受个人、书籍、文件或机构（如最高法院）的观点。</td>
+<td>对权威观点也进行批判性评估，不以权威身份替代理由。</td>
+</tr>
+<tr>
+<td>诉诸常识</td>
+<td>用“人人都知道”“没有理性的人会否认”“这是常识”等措辞封闭审查。</td>
+<td>检验所谓常识；过去曾被当作常识的观念可能后来被认定为荒谬甚至更糟。</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>共同限定</strong>：诉诸情感、传统、信仰、温和、权威或常识并不必然非理性。关键区别是它们究竟<strong>邀请</strong>还是<strong>阻止</strong>批判性思考。</li>
+</ul>
+<h2 id="note-3-第-14-章诊断问题">2. 第 14 章诊断问题</h2>
+<ol type="1">
+<li>结论是否从前提中不可避免地推出，还是只是一种可能解释？</li>
+<li>是否存在未被考虑的其他解释、选择或后果？</li>
+<li>我是否把立场压缩成两个极端，排除了分情形或有条件的观点？</li>
+<li>若我选择极端立场，是因为它最合理，还是因为非此即彼框架迫使我如此？</li>
+<li>当前真正待审的是人物品格，还是人物提出的观念？</li>
+<li>谁提出了断言？提出者是否承担了支持责任，尤其是在断言偏离有知识者看法时？</li>
+<li>所谓原因是否只有“先发生”这一依据？巧合是否仍然可能？</li>
+<li>我回应的是对方实际主张，还是被改写、夸张后的替身？</li>
+<li>情感、传统、信仰、温和、权威或“常识”是在帮助审查理由，还是在叫我停止思考？</li>
+<li>即使论证中发现错误，结论是否仍可能有独立证据支持？什么观点最终最合理、最可支持？</li>
+</ol>
+<h2 id="note-3-第-15-章问题组合的机制">3. 第 15 章：问题组合的机制</h2>
+<h3 id="note-3-一般组合规律">3.1 一般组合规律</h3>
+<ul>
+<li>第 6–14 章的问题既可单独出现，也同样常以各种组合出现，可能组合不可胜数。</li>
+<li>示例路径：
+<ul>
+<li>“我的更好”可能使人抵制挑战珍爱信念的新观念。</li>
+<li>从众冲动可能使人接受关于人或制度的刻板形象；刻板形象又可能导致无根据的假定或对复杂情境的过度简化。</li>
+</ul></li>
+<li><strong>累积效应</strong>：多个问题合在一起，比任一单独问题更严重地阻碍批判性思考。</li>
+<li><strong>链式效应</strong>：一个错误强化另一个错误、触发第三个错误，依次扩展。</li>
+<li><strong>跨领域扩散</strong>：链条常始于一个领域（克劳德的政治、阿尔玛的时尚、山姆的性观念），但可能影响其他领域；在生活某一方面习惯不思考的人，很可能变得更不思考，而不是更会思考。</li>
+<li><strong>便利诱因</strong>：日常问题复杂，人又倾向用最容易、最快的方式处理，因此现成、简单的标准答案具有吸引力。</li>
+<li><strong>首要纠正</strong>：承认自己也容易受这些问题影响；它们不是“别人的问题”，也不只发生在教育不足或智力较低者身上，而是以不同程度存在于所有人中。</li>
+<li><strong>持续纠正</strong>：定期提醒自己每一种问题是什么，以及最有效的处理办法。</li>
+</ul>
+<h3 id="note-3-三个组合案例">3.2 三个组合案例</h3>
+<h4 id="note-3-克劳德政治认同链">克劳德：政治认同链</h4>
+<ol type="1">
+<li>对政党有强烈个人认同，形成“我的更好”。</li>
+<li>高估自己认同的候选人与党纲，低估反对方，看不见己方并非完美、对方也可能有可取之处。</li>
+<li>谈论候选人和政纲时过度简化，把己方候选人说成天才、对手说成彻底的傻瓜，并扩展到对手的记录、家人与同僚。</li>
+<li>内尔冷静地以事实指出错误和夸张后，克劳德为减轻尴尬而设法维护面子：发怒、指控对方歪曲、否认自己说过的话、无视事实继续固守。</li>
+<li>越执着于原有立场，承认错误就越困难，因此克劳德很可能没有从事件中学到多少。</li>
+</ol>
+<h4 id="note-3-阿尔玛时尚抵制链">阿尔玛：时尚抵制链</h4>
+<ol type="1">
+<li>穿着极保守，强烈抵制时尚变化；迷你裙重新流行时感到震惊。</li>
+<li>把设计师称为意图摧毁端庄、推动道德堕落的变态者。</li>
+<li>源文可确定的结果是：她对设计师的品格与意图草率下结论，并把结论过度概括到所有设计师。</li>
+<li>源文中解释中间机制的句子残缺，不能可靠补出抗拒改变与上述结果之间的全部原始措辞。</li>
+</ol>
+<h4 id="note-3-山姆从众选择性接触刻板化链">山姆：从众—选择性接触—刻板化链</h4>
+<ol type="1">
+<li>为获得一个性关系开放群体的接纳和认可而加入，不是经过审慎比较其优缺点和价值后出于确信加入。</li>
+<li>归属“圈内人”的愿望压倒个体判断，并使他暂停批判能力。</li>
+<li>只购买赞美群体性行为、攻击传统性观念的书，只参加把性关系开放称为开明与解放的讲座；忽略所有不利观点，甚至忽略混合观点。</li>
+<li>最终以刻板印象判断两类人：把所有性关系开放者视为智识勇敢、情绪健康，把一夫一妻者视为不思考、恐惧、受压抑。</li>
+<li>又把艾滋病警告解释为清教徒式地反对性表达，形成源文所称的愚蠢立场。</li>
+</ol>
+<h2 id="note-3-第-614-章问题汇总表">4. 第 6–14 章问题汇总表</h2>
+<div class="table-wrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>问题</th>
+<th>如何识别</th>
+<th>如何处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“我的更好”</td>
+<td>仅因为观念属于自己就偏爱它。</td>
+<td>提醒自己人人都有此倾向；像审查他人观念一样审查自己的观念。</td>
+</tr>
+<tr>
+<td>抗拒改变</td>
+<td>因熟悉而偏爱旧观念、排斥不熟悉的新观念。</td>
+<td>预期自己对新观念的第一反应可能是否定；先把反应搁置，再据批判性评估判断。</td>
+</tr>
+<tr>
+<td>从众</td>
+<td>因群体意见或归属欲而与别人同想；反向形式是仅因别人不这样想而故意不同。</td>
+<td>让思考建立在证据上，而不是建立在别人怎样想或不怎样想上。</td>
+</tr>
+<tr>
+<td>维护面子</td>
+<td>不愉快现实威胁自我形象或对外形象时，试图维持该形象。</td>
+<td>区分希望如此与实际如此；对自己诚实。</td>
+</tr>
+<tr>
+<td>刻板印象</td>
+<td>对人、地点或事物作固定、僵硬的概括。</td>
+<td>提醒自己多数事物不适合整齐分类；若在信息收集初期就觉得自己已知道正确判断，要抵制这种感觉。</td>
+</tr>
+<tr>
+<td>过度简化</td>
+<td>简化不只是把复杂事物缩小到可处理尺度，而是扭曲事实。</td>
+<td>确保观点准确呈现实在。</td>
+</tr>
+<tr>
+<td>草率下结论</td>
+<td>尚未取得充分证据便作判断。</td>
+<td>回答所有与议题有关的重要问题前暂缓判断；若必须在证据不足时回答，使用“如果……那么……”；证据只支持可能性时，只下可能性结论。</td>
+</tr>
+<tr>
+<td>无根据的假定</td>
+<td>某些未被意识到、被视为当然的观念影响了推理。</td>
+<td>养成从阅读和聆听的“字里行间”寻找未明说但明显暗含观念的习惯。</td>
+</tr>
+<tr>
+<td>逻辑谬误</td>
+<td>对议题进行推理时出现的具体错误。</td>
+<td>监控思考中的错误迹象，尤其是在准备口头或书面陈述观点时。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="note-3-组合问题诊断问题">5. 组合问题诊断问题</h2>
+<ol type="1">
+<li>当前判断最先由哪一种问题启动：自我偏爱、抗拒改变、从众、维护面子、刻板化、过度简化、草率下结论、无根据的假定，还是逻辑谬误？</li>
+<li>第一个错误如何强化第二个错误，或触发第三个错误？</li>
+<li>我是否因认同某一群体而高估己方、低估他方？</li>
+<li>遇到反证时，我是在修正判断，还是在发怒、否认、歪曲或固守以维护面子？</li>
+<li>我是否为了被接纳而停止独立判断，只接触支持性材料并忽略反对或混合观点？</li>
+<li>我是否从个别对象的品格或行为草率推广到整个类别？</li>
+<li>某个领域形成的不思考习惯，是否已经扩散到其他领域？</li>
+<li>我是否仅因现成答案更容易、更快捷而采用它？</li>
+<li>我是否把这些问题只看成别人、教育不足者或不聪明者的问题，而没有检查自己？</li>
+<li>我最近是否重新检查过每个问题的定义及其处理办法？</li>
+</ol>
+<h2 id="note-3-祈使式候选原则">6. 祈使式候选原则</h2>
+<p>以下均是由两章明确主张压缩出的行动句，不增加应用题答案：</p>
+<ol type="1">
+<li><strong>要求结论从前提中合乎逻辑地推出；若不能必然推出，就降低结论强度或暂缓判断。</strong></li>
+<li><strong>在接受两个极端之一以前，先检查是否存在合理的中间、条件化或分情形立场。</strong></li>
+<li><strong>当议题是观念时分析观念本身；只有人物品格确为议题时才聚焦人物。</strong></li>
+<li><strong>为自己提出的断言提供支持；断言越偏离有知识者的看法，越要加强支持。</strong></li>
+<li><strong>不要把时间先后直接当作因果；在排除巧合并取得额外证据前保留判断。</strong></li>
+<li><strong>准确复述并回应对方实际主张，不要攻击被改造出来的替身。</strong></li>
+<li><strong>不要让情感、传统、信仰、温和、权威或常识终止审查；判断它们是在邀请还是阻止批判性思考。</strong></li>
+<li><strong>发现谬误后继续独立评估结论，不要把推理有误等同于结论必假。</strong></li>
+<li><strong>像审查他人的观念一样审查自己的观念。</strong></li>
+<li><strong>把对新观念的第一反应暂时搁置，再按批判性评估作判断。</strong></li>
+<li><strong>让判断服从证据，而不是服从群体认同、归属欲或反向从众。</strong></li>
+<li><strong>区分希望如此与实际如此，并在遭遇反证时对自己诚实。</strong></li>
+<li><strong>在信息充分前抵制固定分类和确定感；回答重要问题前暂缓判断。</strong></li>
+<li><strong>确保简化仍准确呈现实在，不要让简化变成扭曲。</strong></li>
+<li><strong>阅读和聆听时检查未明说但明显暗含的假设。</strong></li>
+<li><strong>承认所有这些问题也可能发生在自己身上，并定期复习其识别与处理办法。</strong></li>
+<li><strong>尤其在准备口头或书面表达观点时，主动监控逻辑谬误及其组合。</strong></li>
+</ol>
+<h2 id="note-3-应用题台账只保留任务不作答">7. 应用题台账（只保留任务，不作答）</h2>
+<h3 id="note-3-第-14-章应用">7.1 第 14 章应用</h3>
+<p><strong>统一任务</strong>：仔细检查每个论证；若不了解议题则先研究；判断何种立场最合理；识别论证中的逻辑谬误，并避免在自己的推理中犯谬误。</p>
+<ol type="1">
+<li><strong>全国选举</strong>：不投票，因为自己的票会被别人抵消，且所有政客都会掠夺公众，所以谁当选都无所谓。</li>
+<li><strong>斗狗</strong>：斗狗在多数州违法；主张狗是私人财产，所有者应能任意处置。</li>
+<li><strong>平权行动</strong>：原为克服多年少数群体所受偏见，却造成对多数群体的歧视；主张取消要求、回到旧制度。</li>
+<li><strong>购买外国商品</strong>：购买外国汽车、服装和电子设备会损害美国企业与工人；爱国要求即使外国产品更便宜、质量更高也不要购买。</li>
+<li><strong>死后生命</strong>：因为从未有人从坟墓回来，所以相信死后生命很荒谬。</li>
+<li><strong>军中女性</strong>：女性应接受与男性相同的体能训练，也不应免除前线任务。</li>
+<li><strong>收养资格</strong>：1982 年纽约州社会服务官员指示地方收养机构，不得仅因申请者是同性恋者，或有酗酒、药物滥用、犯罪、依赖福利、严重情绪或身体残障史而拒绝申请。</li>
+<li><strong>无罪推定</strong>：法院积案严重；主张废除“证明有罪前视为无罪”的旧观念，改由所有被控者证明自己无罪。</li>
+<li><strong>皮特·罗斯与州彩票</strong>：罗斯因涉嫌体育赌博受谴责之际，各州巨额彩票却被视为合法；主张整件事只能以严重无知或虚伪解释。</li>
+<li><strong>大学教育资格</strong>：人人都应接受大学教育导致课程稀释、学位失去意义；主张大学只保留给修过严格高中课程且成绩优异者。</li>
+</ol>
+<p><strong>小组讨论</strong>：从上述十例中选一例，与两三名同学讨论并争取共识；避免逻辑谬误，准备向全班陈述观点。</p>
+<h3 id="note-3-第-15-章应用">7.2 第 15 章应用</h3>
+<h4 id="note-3-应用-1像分析克劳德阿尔玛山姆一样分析问题组合">应用 1：像分析克劳德、阿尔玛、山姆一样分析问题组合</h4>
+<ol type="1">
+<li><strong>安与丹</strong>：得知 22 岁、大学四年级的女儿是活跃的女同性恋者；因既有道德退化信念而震惊，先互相归咎父母关系，后认定大学是直接原因，并要求解雇学生事务负责人。</li>
+<li><strong>斯蒂芬与斯坦老师</strong>：斯蒂芬因自己和教师同为犹太人而预期照顾，刻意强调身份、减少出勤和作业，以不幸故事求情；得 D 后仍预期最终提分，最终得 F，转而拒绝交谈并公开斥责教师虚伪。</li>
+</ol>
+<h4 id="note-3-应用-2迈伦l.-福克斯骗局">应用 2：迈伦·L. 福克斯骗局</h4>
+<ul>
+<li>三位南加州医学教授雇演员，以虚假身份、耀眼资历和学术化题目向三组共 55 名教育工作者演讲；内容由矛盾陈述、空话和学术术语组成，问答更无意义，但听众无人识破，几乎都以为有所收获，甚至称赞其表达与风度。</li>
+<li><strong>任务</strong>：解释第 6–14 章哪些问题的组合可能造成听众轻信。</li>
+</ul>
+<h4 id="note-3-应用-3确定立场并避免本章复习的全部问题">应用 3：确定立场，并避免本章复习的全部问题</h4>
+<ol type="1">
+<li><strong>监狱过度拥挤与提前释放</strong>：阿拉巴马监狱和看守所严重拥挤，联邦地区法官以拥挤违反囚犯免受“残酷和异常惩罚”的权利为由，下令提前释放 300 多名囚犯，其中包括杀人犯、强奸犯和累犯；判断是否同意法官观点。</li>
+<li><strong>退伍军人组织免税与游说</strong>：慈善和教育组织通常须避免游说才能免税，退伍军人组织过去可广泛游说而不失免税资格；1982 年联邦上诉法院以违反宪法平等保护为由取消特殊待遇；判断是否同意。</li>
+<li><strong>【源文空白】</strong>：编号存在，但没有题干。作为已知遗漏保留，不补写、不推测。</li>
+</ol>
+<h4 id="note-3-应用-4评估论证确定最合理立场及其理由">应用 4：评估论证，确定最合理立场及其理由</h4>
+<p><strong>统一提醒</strong>：避免本章复习的思考问题；不要预设题中观点必然含错，它可能没有错误。</p>
+<ol type="1">
+<li><strong>罪犯出售生平故事权</strong>：罪行越严重，出版商和制片人往往越愿高价购买；主张终止这种奖励犯罪的做法，把利润设为基金分给受害者。</li>
+<li><strong>《罗马书》13 章与政治服从</strong>：由保罗关于服从统治权威的文字推出，所有基督徒都有义务忠于本国政府、不得挑战，因此参加国内抗议或支持外国抗议运动也属错误。</li>
+<li><strong>审查“思想毒物”</strong>：主张移除在哲学上异于“美国生活方式”的书刊、唱片或录像，不仅是权利还是责任，尤其为保护儿童；以夺走儿童手中毒物类比移除思想材料。</li>
+<li><strong>吸烟者权利</strong>：把航班、办公室、公共场所和餐馆的禁烟或分区视为否认吸烟者权利；主张个人健康风险只关乎自己，不愿吸二手烟的同事可购买净化器，乘客可有无烟区但不能反对吸烟区。</li>
+<li><strong>拒绝血液酒精检测</strong>：1983 年美国最高法院允许把司机拒检作为不利证据；反对理由是清醒者也可能因隐私拒检，而法官和陪审团可能据此误判有罪。</li>
+<li><strong>丈夫改随妻姓</strong>：反对成年男子婚后采用未婚妻姓氏，理由包括这是向压力屈服、会让婚姻开局不佳、行为古怪且不男子气、家人有权期待保留家姓，以及传统一向如此。</li>
+<li><strong>宿舍楼层共同赔偿</strong>：责任人不明时向整层住户收取维修费；反对理由是损害可能由访客造成，即使责任人住在该层，向不知情的无辜者收费也不公平；若校方无法确定责任人，则无人应被收费。</li>
+</ol>
+<p><strong>小组讨论</strong>：从应用 4 选择一例，与两三名同学讨论并争取共识；避免本章复习的错误，准备向全班陈述。</p>
+<h2 id="note-3-依赖关系">8. 依赖关系</h2>
+<ul>
+<li><strong>直接章节依赖</strong>：第 15 章明确综合第 6–14 章：
+<ul>
+<li>第 6 章：“我的更好”；</li>
+<li>第 7 章：抗拒改变；</li>
+<li>第 8 章：从众；</li>
+<li>第 9 章：维护面子；</li>
+<li>第 10 章：刻板化；</li>
+<li>第 11 章：过度简化；</li>
+<li>第 12 章：草率下结论；</li>
+<li>第 13 章：无根据的假定；</li>
+<li>第 14 章：逻辑谬误。</li>
+</ul></li>
+<li><strong>推理结构依赖</strong>：第 14 章以“前提／断言—结论—证据—可能性／确定性”的区分为基础。</li>
+<li><strong>评估依赖</strong>：攻击个人要求先区分“人物是议题”与“观念是议题”；错误原因要求区分时间先后与因果；稻草人要求准确还原原主张；非理性诉求要求区分邀请思考与阻止思考。</li>
+<li><strong>研究依赖</strong>：第 14 章应用明确要求在不了解议题时先研究；两章都要求以充分证据而非熟悉感、群体态度或现成答案形成判断。</li>
+<li><strong>结论依赖</strong>：识别错误只是中间步骤；最终判断仍依赖对何种观点最合理、最可支持的独立评估。</li>
+</ul>
+<h2 id="note-3-来源与文本问题">9. 来源与文本问题</h2>
+<h3 id="note-3-已忽略的重复转换块标记">9.1 已忽略的重复转换块／标记</h3>
+<ul>
+<li>第 14 章应用题及小组讨论在后半部再次以无编号文本重复；只登记一次。</li>
+<li>第 15 章的案例、应用题和小组讨论在后半部再次重复；只登记一次。</li>
+<li>第 15 章克劳德、阿尔玛、山姆的案例段落各有重复；克劳德段落内部还重复了一组对候选人的描述；均按单一案例处理。</li>
+<li>星号标题、紧随其后的同名大写标题以及页尾 <code>P2-C14-4</code>、<code>P2-C15-6</code> 视为转换／分页标记，不当作独立内容。</li>
+</ul>
+<h3 id="note-3-缺失错标与损坏">9.2 缺失、错标与损坏</h3>
+<ul>
+<li><code>017_unwarranted-assumptions.md</code> 的文件名及页首标题与正文不符；按用户说明及正文内容将其识别为第 14 章“逻辑谬误”。</li>
+<li>第 15 章应用 3 的第 3 项只有编号，没有题干；本台账明确保留为空白遗漏，未作补写。</li>
+<li>阿尔玛分析段有明显残句：<code>victim of a combination of problems in the new and to exaggerate...</code>，无法可靠还原完整中间机制。</li>
+<li>山姆分析段有明显残句：<code>eventually resulted in his non-promiscuous alike...</code>；可由其前后文确认选择性接触和对两类人的刻板判断，但不补造缺失原句。</li>
+<li>源文另有多处 OCR／转录问题，如 <code>Thought/though</code>、<code>More over/moreover</code>、<code>The are/They are</code>、<code>For simple/For example</code>、<code>Proffering/Preferring</code>、大小写和缺词错误；本台账只在语义明确时做规范化表达，不据残损文本增加新主张。</li>
+<li>应用题含年代较早的政策、政治与社会案例，也保留了当时原文中的标签化或污名化措辞；登记这些措辞不表示认可其预设。</li>
+</ul>
+<h3 id="note-3-原文列出的资料来源">9.3 原文列出的资料来源</h3>
+<p>下列中文题名便于阅读，英文书目信息用于核查原文。</p>
+<ul>
+<li>第 14 章收养案例：《州规定允许同性恋者与罪犯收养儿童》；《宾厄姆顿新闻报》，1982 年 8 月 8 日，第 1A 页。<code>“State Rules Let Gays and Crooks Adopt Children,” Binghamton Press, August 8, 1982, p. 1A.</code></li>
+<li>迈伦·L. 福克斯案例：《一次教育骗局实验》；《Parade》杂志，1974 年 5 月 12 日，第 17 页。<code>“An Exercise in Educational Flimflam,” Parade, May 12, 1974, p. 17.</code></li>
+<li>阿拉巴马提前释放案例：《法院命令阻止大批囚犯获释》；奥尼昂塔《星报》，1981 年 12 月 22 日，第 12 页。<code>“Court Order Blocks Big Inmate Release,” The (Oneonta) Star, December 22, 1981, p. 12.</code></li>
+<li>退伍军人组织免税案例：《裁决撤销免税资格》；奥尼昂塔《星报》，1982 年 3 月 27 日，第 1 页。<code>“Ruling Strikes Down Tax Exempt Status,” The (Oneonta) Star, March 27, 1982, p. 1.</code></li>
+<li>基督徒服从权威论证：《罗马书》第 13 章；<code>Romans 13.</code></li>
+<li>血液酒精检测案例：《严格却有缺陷的酒精检测》；《基督教科学箴言报》，1983 年 3 月 3 日，第 24 页。<code>“Tough – But Flawed – Alcohol Tests,” Christian Science Monitor, March 3, 1983, p. 24.</code></li>
+</ul>
+</article><footer class="read-footer">中文译本依据项目底本整理。原文缺损与编辑处理见审校说明。</footer></main></div><script>
+const search=document.getElementById('chapter-search');
+search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();document.querySelectorAll('.chapter-link').forEach(a=>{a.parentElement.hidden=!a.textContent.toLowerCase().includes(q)})});
+document.querySelectorAll('[data-size]').forEach(button=>button.addEventListener('click',()=>{document.documentElement.style.setProperty('--size',button.dataset.size+'px');document.querySelectorAll('[data-size]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)))}));
+if(window.matchMedia('(max-width:720px)').matches)document.getElementById('outline').open=false;
+const chapters=[...document.querySelectorAll('.chapter')];
+function updateCurrent(){let current=chapters[0];for(const chapter of chapters){if(chapter.getBoundingClientRect().top<=100)current=chapter;else break;}document.querySelectorAll('.chapter-link').forEach(a=>{const active=current&&a.hash==='#'+current.id;a.classList.toggle('current',active);if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});}
+let pending=false;window.addEventListener('scroll',()=>{if(!pending){pending=true;requestAnimationFrame(()=>{updateCurrent();pending=false;});}},{passive:true});
+window.addEventListener('load',updateCurrent);window.addEventListener('hashchange',updateCurrent);window.addEventListener('resize',updateCurrent);updateCurrent();
+</script></body></html>

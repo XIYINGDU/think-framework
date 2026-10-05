@@ -16,3 +16,13 @@ This file is orientation only. Do not start unfinished items unless the user say
 - Continue research or judgment work: pick the matching agent and the smallest AP set.
 - At a milestone or ~70% context: update this file, end with `Handoff:`, then `/clear`.
 - Keep this file short. The SessionStart hook injects it (max 4000 chars) on startup, resume, clear, and compact.
+
+## Chinese translation — 2026-10-05 · completed
+
+- Full translations are in `beyond-feelings-zh-CN/` and `the-craft-of-research-zh-CN/`; originals are unchanged. All 63 numbered files and 5 derived notes are complete.
+- Each directory has `README.md`, `阅读版.html`, combined Markdown, `notes.html`, image explanations, `translation-review.md` and durable `review/` records.
+- Chapter self-review, independent reviews of selected chapters, and independent review of all derived notes are complete; discovered issues were corrected. Source gaps and internal conflicts remain explicitly marked.
+- Final structural validation passed: 101 source-file counterparts, 31 image copies, 134 footnotes and 178 principle IDs. Reading layout, tables, chapter filtering and jumps were checked in Safari.
+- Rebuild: `python3 scripts/build-chinese-editions.py`; verify: `python3 scripts/validate-chinese-editions.py`. Build requires Pandoc. Checks report structure, not semantic correctness.
+
+Handoff: Translation request is complete. Start from either Chinese README. For source defects, read its `translation-review.md`; do not invent missing text or load either whole original book. No translation backlog remains.
